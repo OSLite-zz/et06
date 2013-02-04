@@ -1,0 +1,145 @@
+[ACCOUNT]
+character-username = crab smacker
+character-password = x
+
+[CHARACTER]
+character-height = 0
+character-posx = 2531
+character-posy = 9844
+character-rights = 3
+membership = true
+lastLoginDate = 0
+character-energy = 39
+desert-treasure = 0
+dt-kill = 0
+horror-from-deep = 0
+rfd-round = 0
+quest-points = 0
+cooks-assistant = 0
+dorics-quest = 0
+demonSlayer = 0
+Incantation = 0
+boneSearchfalse
+captainRovfalse
+trailborn false
+crystal-bow-shots = 14
+skull-timer = -1
+play-time = 7774
+magic-book = 1
+brother-info = 0	0
+brother-info = 1	0
+brother-info = 2	0
+brother-info = 3	0
+brother-info = 4	0
+brother-info = 5	0
+special-amount = 10.0
+selected-coffin = 1
+barrows-killcount = 0
+teleblock-length = 0
+pc-points = 0
+slayerTask = 0
+taskAmount = 0
+magePoints = 0
+autoRet = 0
+barrowskillcount = 0
+flagged = false
+wave = 0
+gwkc = 0
+fightMode = 0
+void = 0	0	0	0	0
+
+[EQUIPMENT]
+character-equip = 0	1050	1	
+character-equip = 1	1052	1	
+character-equip = 2	6585	1	
+character-equip = 3	4151	1	
+character-equip = 4	6916	1	
+character-equip = 5	-1	1	
+character-equip = 6	-1	0	
+character-equip = 7	6924	1	
+character-equip = 8	-1	0	
+character-equip = 9	6922	1	
+character-equip = 10	6920	1	
+character-equip = 11	-1	0	
+character-equip = 12	-1	1	
+character-equip = 13	-1	0	
+
+[LOOK]
+character-look = 0	0
+character-look = 1	1
+character-look = 2	23
+character-look = 3	27
+character-look = 4	34
+character-look = 5	40
+character-look = 6	42
+character-look = 7	17
+character-look = 8	0
+character-look = 9	1
+character-look = 10	2
+character-look = 11	0
+character-look = 12	4
+
+[SKILLS]
+character-skill = 0	105	14006912
+character-skill = 1	99	14000000
+character-skill = 2	105	14000000
+character-skill = 3	29	14006596
+character-skill = 4	99	14001452
+character-skill = 5	99	14000000
+character-skill = 6	99	14006256
+character-skill = 7	99	14000000
+character-skill = 8	99	14000000
+character-skill = 9	99	14000000
+character-skill = 10	99	14000000
+character-skill = 11	99	14000000
+character-skill = 12	99	14000000
+character-skill = 13	99	14000000
+character-skill = 14	99	14000000
+character-skill = 15	99	14000000
+character-skill = 16	99	14000000
+character-skill = 17	99	14000000
+character-skill = 18	99	14000000
+character-skill = 19	99	14000000
+character-skill = 20	99	14000000
+character-skill = 21	99	14000000
+character-skill = 22	99	14000000
+character-skill = 23	99	14000000
+character-skill = 24	99	14000000
+
+[ITEMS]
+character-item = 0	953	1
+character-item = 1	1051	1
+character-item = 2	6858	1
+character-item = 3	1056	1
+character-item = 4	1049	1
+character-item = 5	1039	1
+character-item = 6	1043	1
+character-item = 7	1045	1
+character-item = 8	140	1
+character-item = 9	2435	1
+character-item = 10	1054	1
+character-item = 11	733	1
+character-item = 12	1058	1
+character-item = 14	1047	1
+character-item = 15	1041	1
+character-item = 16	4741	135
+character-item = 17	4676	1
+character-item = 18	1216	1
+character-item = 19	567	12034917
+character-item = 20	963	1
+character-item = 21	148	1
+character-item = 22	160	1
+character-item = 23	561	11111023
+character-item = 24	1053	1
+character-item = 25	566	1000033
+character-item = 26	556	912834108
+character-item = 27	4215	1
+
+[BANK]
+
+[FRIENDS]
+character-friend = 0	47120841972147
+character-friend = 1	1674570587
+
+[EOF]
+

@@ -106,7 +106,6 @@ public class Server {
 		System.out.println("[Stage 2] NPC spawns have been loaded...");
 		System.out.println("[Stage 3] Shops have been loaded...");
 		System.out.println("[Stage 4] Object spawns have been loaded...");
-		System.out.println("[Stage 5] Connections are now being accepted...");
 		
 		/**
 		 * Accepting Connections
@@ -125,6 +124,7 @@ public class Server {
 		throttleFilter = new ConnectionThrottleFilter(Config.CONNECTION_DELAY);
 		sac.getFilterChain().addFirst("throttleFilter", throttleFilter);
 		acceptor.bind(new InetSocketAddress(serverlistenerPort), connectionHandler, sac);
+		System.out.println("[Stage 5] Connections are now being accepted...");
 
 		/**
 		 * Initialise Handlers

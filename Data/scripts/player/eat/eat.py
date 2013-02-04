@@ -2,8 +2,6 @@
 # Author: Lmctruck30
 #
 
-from server.util import ScriptManager
-
 # heal, delay, itemId, itemSlot
 
 # cake

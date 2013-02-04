@@ -2,8 +2,6 @@
 # Author: Lmctruck30
 #
 
-from server.util import ScriptManager
-
 # Dig
 def itemClick_952(player, itemId, itemSlot):
 	player.startAnimation(830)

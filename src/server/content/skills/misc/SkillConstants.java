@@ -45,4 +45,5 @@ public class SkillConstants {
 			6216, 4443, 6242, 6211, 6226, 4272, 6231, 6258, 4282, 6263, 6221,
 			4416, 6237, 4277, 4261, -1, -1, 4267 };
 
+    //todo: level up interfaces for slayer and farming
 }

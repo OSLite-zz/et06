@@ -1,6 +1,3 @@
-from server.model.players import Client
-from server.util import ScriptManager
-
 def npcClick1_943(c, npcId):
 	if(c.tutorial == 0):
 		c.getDH().sendDialogues(4, npcId)

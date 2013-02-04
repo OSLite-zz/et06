@@ -2,9 +2,6 @@
 # Author: blakeman8192
 
 import random
-from server.model.players import PlayerHandler
-from server.task import TaskManager
-from server.task import TaskFactory
 
 # ITEM ACTION LISTENERS	
 def objectAction1_2093(player, objX, objY):

@@ -1,5 +1,3 @@
-from server.util import ScriptManager
-
 def npcClick2_522(c, npcId):
 	c.getShops().openShop(1)
 

@@ -5,11 +5,6 @@
 # Stump: 1341(deadtree)
 
 import random
-from server.model.players import PlayerHandler
-from server.util import Misc
-from server.task import TaskManager
-from server.task import TaskFactory
-
 # ITEM ACTION LISTENERS
 # Normal Trees
 def objectAction1_1276(player, objX, objY):
@@ -105,7 +100,7 @@ def objectAction1_1309(player, objX, objY):
 def objectAction1_1292(player, objX, objY):
 	doAxeCheck(player, "MAGIC", 1292, objX, objY)
 def objectAction1_1306(player, objX, objY):
-	doAxeCheck(player, "WILLOW", 1306, objX, objY)
+	doAxeCheck(player, "MAGIC", 1306, objX, objY)
 
 # AXE CHECK
 def doAxeCheck(player, name, objID, objX, objY):
@@ -125,10 +120,10 @@ def doAxeCheck(player, name, objID, objX, objY):
 			elif player.hasItem(1351) or player.hasItem(1349):
 				doCut(player, name, objID, objX, objY)
 			else:
-				player.sendMessage("You do not have a axe of which you have the level to use.")
+				player.sendMessage("You do not have an axe of which you have the level to use.")
 		elif player.freeSlots() == 0:
 			player.resetAnimation()
-			player.sendMessage("You don't have enough inventory space to do that.")
+			player.sendMessage("Your inventory is full!")
 
 # SKILL EXECUTION
 def doCut(player, name, objID, x, y):
@@ -171,18 +166,15 @@ def doCut(player, name, objID, x, y):
 def callback_woodcutting_TREE(player, id, x, y):
 	player.sendMessage("You get some logs.")
 	player.addItem(1511, 1)
-	player.addSkillXP(50, 8)
-	if random.randrange(1 , 2) == 1:
-		player.resetAnimation()
-		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
-		TaskManager.registerClientTask(TaskFactory.getDelayedGlobalTask("callback_woodcutting_replace", id, x, y), 3)
-	else:
-		doAxeCheck(player, "TREE", id, x, y)
+	player.addSkillXP(25, 8)
+	player.resetAnimation()
+	PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
+	TaskManager.registerClientTask(TaskFactory.getDelayedGlobalTask("callback_woodcutting_replace", id, x, y), 3)
 
 def callback_woodcutting_OAK(player, id, x, y):
 	player.sendMessage("You get some oak logs.")
 	player.addItem(1521, 1)
-	player.addSkillXP(75, 8)
+	player.addSkillXP(37.5, 8)
 	if Misc.random(4) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -193,7 +185,7 @@ def callback_woodcutting_OAK(player, id, x, y):
 def callback_woodcutting_WILLOW(player, id, x, y):
 	player.sendMessage("You get some willow logs.")
 	player.addItem(1519, 1)
-	player.addSkillXP(135, 8) 15
+	player.addSkillXP(67.5, 8)
 	if Misc.random(6) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -202,10 +194,10 @@ def callback_woodcutting_WILLOW(player, id, x, y):
 		doAxeCheck(player, "WILLOW", id, x, y)
 
 def callback_woodcutting_YEW(player, id, x, y):
-	player.sendMessage("You get some willow logs.")
+	player.sendMessage("You get some yew logs.")
 	player.addItem(1515, 1)
-	player.addSkillXP(350, 8)
-	if Misc.random(6) == 1:
+	player.addSkillXP(175, 8)
+	if Misc.random(7) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
 		TaskManager.registerClientTask(TaskFactory.getDelayedGlobalTask("callback_woodcutting_replace", id, x, y), 8)
@@ -215,8 +207,8 @@ def callback_woodcutting_YEW(player, id, x, y):
 def callback_woodcutting_MAGIC(player, id, x, y):
 	player.sendMessage("You get some magic logs.")
 	player.addItem(1513, 1)
-	player.addSkillXP(350, 8)
-	if Misc.random(6) == 1:
+	player.addSkillXP(250, 8)
+	if Misc.random(8) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
 		TaskManager.registerClientTask(TaskFactory.getDelayedGlobalTask("callback_woodcutting_replace", id, x, y), 8)

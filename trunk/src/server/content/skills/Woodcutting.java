@@ -23,23 +23,18 @@ public class Woodcutting extends SkillHandler {
 			resetWoodcutting(c);
 			return;
 		}
-        c.sendMessage("I talk to the wind...");
 		if (hasAxe(c) && !canUseAxe(c)){
 			c.sendMessage("You do not have an axe which you have the woodcutting level to use.");
 			return;
 		}
-        c.sendMessage("My words, are all carried away...");
 		if (!hasAxe(c)) {
 			c.sendMessage("You do not have an axe which you have the woodcutting level to use.");
 			return;
 		}
 
-		c.sendMessage("You swing your axe at the tree.");
-
 		if(c.playerIsWoodcutting) {
 			return;
 		}
-        c.sendMessage("I taaaaalk to the wind");
 		c.playerIsWoodcutting = true;
 		c.stopPlayerSkill = true;
 
@@ -51,7 +46,6 @@ public class Woodcutting extends SkillHandler {
 		c.playerSkillProp[8][6] = getTreeLog(c, tree);		//LOG
 
 		c.woodcuttingTree = c.objectX + obY;
-        c.sendMessage("The wind does not hear....");
 		c.doAmount = Misc.random(25);
 		if(normalTree(c, tree)) {
 			c.doAmount = 1;
@@ -63,7 +57,6 @@ public class Woodcutting extends SkillHandler {
 		}
 
 		c.startAnimation(c.playerSkillProp[8][4]);
-        c.sendMessage("The wind cannot hear---");
 		for(int i = 0; i < trees.length; i++) {
 			for(int l = 0; l < 6; l++) 
 				if(tree == trees[l][i]) {

@@ -593,27 +593,27 @@ public class SkillInterfaces {
 			menuLine("1", "Skeletal Boots", 6147, 1);
 			menuLine("1", "Elemental Shield", 2890, 2);
 			menuLine("20", "Enchanted Hat(With 40 Magic)", 7400, 3);
-			menuLine("20", "Enchanted Robe Top(With 40 Magic)", 7399, 4);
+			menuLine("20", "Enchanted Top(With 40 Magic)", 7399, 4);
 			menuLine("20", "Enchanted Robe(With 40 Magic)", 7398, 5);
 			menuLine("20", "Mystic Hat(With 40 Magic)", 4099, 6);
 			menuLine("20", "Mystic Robe Top(With 40 Magic)", 4101, 7);
-			menuLine("20", "Mystic Robe(With 40 Magic)", 4103, 8);
+			menuLine("20", "Mystic Robe Bottom(With 40 Magic)", 4103, 8);
 			menuLine("20", "Mystic Gloves(With 40 Magic)", 4105, 9);
 			menuLine("20", "Mystic Boots(With 40 Magic)", 4107, 10);
 			menuLine("25", "Infinity Hat(With 50 Magic)", 6918, 11);
-			menuLine("25", "Infinity Ttop(With 50 Magic)", 6916, 12);
-			menuLine("25", "Infinity Bottom(With 50 Magic)", 6924, 13);
+			menuLine("25", "Infinity Top(With 50 Magic)", 6916, 12);
+			menuLine("25", "Infinity Bottoms(With 50 Magic)", 6924, 13);
 			menuLine("25", "Infinity Gloves(With 50 Magic)", 6922, 14);
 			menuLine("25", "Infinity Boots(With 50 Magic)", 6920, 15);
 			menuLine("40", "Splitbark Helm(With 40 Magic)", 3385, 16);
 			menuLine("40", "Splitbark Body(With 40 Magic)", 3387, 17);
 			menuLine("40", "Splitbark Legs(With 40 Magic)", 3389, 18);
 			menuLine("40", "Splitbark Gauntlets(With 40 Magic)", 3391, 19);
-			menuLine("40", "Splitbark Boots(With 40 Magic)", 3393, 20);
+			menuLine("40", "Splitbark Greaves(With 40 Magic)", 3393, 20);
 			menuLine("40", "Skeletal Helm(With 40 Magic)", 6137, 21);
 			menuLine("40", "Skeletal Top(With 40 Magic)", 6139, 22);
 			menuLine("40", "Skeletal Bottoms(With 40 Magic)", 6141, 23);
-			menuLine("44", "Farseer Helm", 3755, 24);
+			menuLine("45", "Farseer Helm", 3755, 24);
 			optionTab("Defence", "Magic", "Bronze", "Iron", "Steel", "Black",
 					"White", "Mithril", "Adamant", "Rune", "Dragon", "Barrows",
 					"Magic", "Equipment", "Milestones");
@@ -623,23 +623,23 @@ public class SkillInterfaces {
 			clearMenu();
 			menuLine("1", "Khazard Helmet", 74, 0);
 			menuLine("1", "Khazard Armour", 75, 1);
-			menuLine("1", "Anti-Dragonbreath Shield", 1540, 2);
+			menuLine("1", "Anti-Dragon Shield", 1540, 2);
 			menuLine("1", "Spined Gloves", 6149, 3);
 			menuLine("1", "Spined Boots", 6143, 4);
 			menuLine("1", "Rock-Shell Gloves", 6151, 5);
 			menuLine("1", "Rock-Shell Boots", 6145, 6);
 			menuLine("5", "Spiny Helmet", 4551, 7);
-			menuLine("10", "Hard Leather Body", 1131, 8);
+			menuLine("10", "Hardleather Body", 1131, 8);
 			menuLine("20", "Studded Body(With 20 Ranged)", 1133, 9);
 			menuLine("20", "Initiate Helm(With 10 Prayer)", 5574, 10);
 			menuLine("20", "Initiate Platemail(With 10 Prayer)", 5575, 11);
 			menuLine("20", "Initiate Platelegs(With 10 Prayer)", 5576, 12);
 			menuLine("20", "Mirror Shield(with 20 Slayer)", 4156, 13);
 			menuLine("30", "Snakeskin armour(With 30 Ranged)", 6322, 14);
-			menuLine("40", "Green Dragonhide Body(With 40 Ranged)", 1135, 15);
-			menuLine("40", "Blue Dragonhide Body(With 40 Ranged)", 2499, 16);
-			menuLine("40", "Red Dragonhide Body(With 40 Ranged)", 2501, 17);
-			menuLine("40", "Black Dragonhide Body(With 40 Ranged)", 2503, 18);
+			menuLine("40", "Green D'hide Body(With 40 Ranged)", 1135, 15);
+			menuLine("40", "Blue D'hide Body(With 40 Ranged)", 2499, 16);
+			menuLine("40", "Red D'hide Body(With 40 Ranged)", 2501, 17);
+			menuLine("40", "Black D'hide Body(With 40 Ranged)", 2503, 18);
 			menuLine("40", "Spined Armour(With 40 Ranged)", 6133, 19);
 			menuLine("40", "Rock-shell Armour", 6129, 20);
 			menuLine("45", "Berserker Helm", 3751, 21);
@@ -1253,7 +1253,7 @@ public class SkillInterfaces {
 			menuLine("78", "Zamorak brew", 189, 21);
 			menuLine("79", "Antidote++", 5954, 22);
 			menuLine("81", "Saradomin brew", 6687, 23);
-			menuLine("82", "Weapon poison++", 5940, 24);
+			menuLine("82", "Weapon poison (super)", 5940, 24);
 			optionTab("Herblore", "Potions", "Potions", "Herbs", "Milestones",
 					"", "", "", "", "", "", "", "", "", "");
 		}

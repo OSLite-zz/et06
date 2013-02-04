@@ -406,11 +406,11 @@ public class DialogueHandler {
 		c.nextChat = 0;
 		break;
 	 	case 2000:
-	 		sendNpcChat1("Did you know Project 06 is still in beta?", c.talkingNpc, "");
+	 		sendNpcChat1("Fuck bitchez get MONEY", c.talkingNpc, "");
 	 		c.nextChat = 2001;
 	 	break;
 	 	case 2001:
-	 		sendPlayerChat1("I do now!");
+	 		sendPlayerChat1("Aight nig!");
 	 		c.nextChat = 0;
 	 		break;
 		}

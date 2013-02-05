@@ -42,8 +42,8 @@ public class Config {
 	
 	public static final int START_LOCATION_X = 3222;
 	public static final int START_LOCATION_Y = 3218;
-	public static final int RESPAWN_X = 3222 + Misc.random(1);
-	public static final int RESPAWN_Y = 3218 + Misc.random(1);
+	public static final int RESPAWN_X = 3222 + Misc.random(2);
+	public static final int RESPAWN_Y = 3218 + Misc.random(2);
 	public static final int DUELING_RESPAWN_X = 3362;
 	public static final int DUELING_RESPAWN_Y = 3263;
 	public static final int RANDOM_DUELING_RESPAWN = 5;
@@ -208,6 +208,12 @@ public class Config {
 	/**
 	* Teleport Spells
 	**/
+    
+    
+    public static final int TELEDELAY = 4500;
+    public static final boolean FREE_TELE = false;//not actually implemented yet
+    
+    
 	// modern
 	public static final int VARROCK_X = 3212;
 	public static final int VARROCK_Y = 3424;

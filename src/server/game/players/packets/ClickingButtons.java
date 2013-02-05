@@ -1116,14 +1116,14 @@ public class ClickingButtons implements PacketType {
 			case 21011:
 			c.takeAsNote = false;
 			break;
-			//home teleports
+                        //home teleports(?)
 			case 4171:
 			case 50056:
-			c.getPA().spellTeleport(Config.AL_KHARID_X, Config.AL_KHARID_Y, 0);
+			c.getPA().spellTeleport(Config.LUMBY_X, Config.LUMBY_Y, 0);
 			break;
-			
+                        //modern teleports
 			case 4140:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 25) {
 					if (c.getItems().playerHasItem(554, 1) && c.getItems().playerHasItem(556, 3) && c.getItems().playerHasItem(563, 1)) {
 						c.getPA().spellTeleport(Config.VARROCK_X + Misc.random(1), Config.VARROCK_Y + Misc.random(1), 0);
@@ -1136,13 +1136,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break;
 			
 			case 4143:
-				if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+				if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 					if (c.playerLevel[6] >= 31) {
 						if (c.getItems().playerHasItem(557, 1) && c.getItems().playerHasItem(556, 3) && c.getItems().playerHasItem(563, 1)) {
 							c.getPA().spellTeleport(Config.LUMBY_X + Misc.random(1), Config.LUMBY_Y + Misc.random(1), 0);
@@ -1155,13 +1155,13 @@ public class ClickingButtons implements PacketType {
 							c.sendMessage("You do not have enough runes to cast this spell.");
 						}
 					} else {
-						c.sendMessage("You need a higher Magic level to cast this spell.");
+						c.sendMessage("You do not have the level required to cast this spell.");
 					}
 				}
 			break;
 			
 			case 4146:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 37) {
 					if (c.getItems().playerHasItem(555, 1) && c.getItems().playerHasItem(556, 3) && c.getItems().playerHasItem(563, 1)) {
 						c.getPA().spellTeleport(Config.FALADOR_X + Misc.random(1), Config.FALADOR_Y + Misc.random(1), 0);
@@ -1174,13 +1174,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break;
 			
 			case 4150:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 45) {
 					if (c.getItems().playerHasItem(556, 5) && c.getItems().playerHasItem(563, 1)) {
 						c.getPA().spellTeleport(Config.CAMELOT_X + Misc.random(2), Config.CAMELOT_Y + Misc.random(2), 0);
@@ -1192,13 +1192,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break;			
 			
 			case 6004:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 51) {
 					if (c.getItems().playerHasItem(555, 2) && c.getItems().playerHasItem(563, 2)) {
 						c.getPA().spellTeleport(Config.ARDOUGNE_X + Misc.random(2), Config.ARDOUGNE_Y + Misc.random(2), 0);
@@ -1210,13 +1210,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break; 
 			
 			case 6005:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 58) {
 					if (c.getItems().playerHasItem(557, 2) && c.getItems().playerHasItem(563, 2)) {
 						c.getPA().spellTeleport(Config.WATCHTOWER_X + Misc.random(2), Config.WATCHTOWER_Y + Misc.random(2), 0);
@@ -1228,13 +1228,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break;
 
 			case 29031:
-				if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+				if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 61) {
 					if (c.getItems().playerHasItem(554, 2) && c.getItems().playerHasItem(563, 2)) {
 						c.getPA().spellTeleport(Config.TROLLHEIM_X + Misc.random(2), Config.TROLLHEIM_Y + Misc.random(2), 0);
@@ -1246,13 +1246,13 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break; 		
 
 			case 72038:
-			if (System.currentTimeMillis() - c.lastTeleport > 5000) {
+			if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
 				if (c.playerLevel[6] >= 64) {
 					if (c.getItems().playerHasItem(555, 2) && c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(554, 2) && c.getItems().playerHasItem(1963, 1)) {
 						c.getPA().spellTeleport(Config.APE_ATOLL_X + Misc.random(3), Config.APE_ATOLL_Y +  Misc.random(2), 0);
@@ -1266,10 +1266,151 @@ public class ClickingButtons implements PacketType {
 						c.sendMessage("You do not have enough runes to cast this spell.");
 					}
 				} else {
-					c.sendMessage("You need a higher Magic level to cast this spell.");
+					c.sendMessage("You do not have the level required to cast this spell.");
 				}
 			}
 			break;
+                        //ancient teleports
+            
+            case 50235://paddewwa
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 54) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(554, 1) && c.getItems().playerHasItem(556, 1)) {
+						c.getPA().spellTeleport(Config.PADDEWWA_X + Misc.random(3), Config.PADDEWWA_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(554, 1);
+						c.getItems().deleteItem(556, 1);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 50245://senntisten
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 60) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(566, 1)) {
+						c.getPA().spellTeleport(Config.SENNTISTEN_X + Misc.random(3), Config.SENNTISTEN_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(566, 1);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 50253://kharyrll
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 66) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(565, 1)) {
+						c.getPA().spellTeleport(Config.KHARYRLL_X + Misc.random(3), Config.KHARYRLL_Y +  Misc.random(3), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(565, 1);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 51005://lassar
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 72) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(555, 4)) {
+						c.getPA().spellTeleport(Config.LASSAR_X + Misc.random(3), Config.LASSAR_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(555, 4);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;//dareeyak
+            case 51013:
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 78) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(554, 3) && c.getItems().playerHasItem(556, 2)) {
+						c.getPA().spellTeleport(Config.DAREEYAK_X + Misc.random(3), Config.DAREEYAK_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(554, 3);
+						c.getItems().deleteItem(556, 2);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 51023://carrallanger
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 84) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(566, 2)) {
+						c.getPA().spellTeleport(Config.CARRALLANGAR_X + Misc.random(3), Config.CARRALLANGAR_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+                        c.getItems().deleteItem(566, 2);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 51031://annakarl
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 90) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(565, 2)) {
+						c.getPA().spellTeleport(Config.ANNAKARL_X + Misc.random(3), Config.ANNAKARL_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(565, 2);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            case 51039://ghorrock
+            if (System.currentTimeMillis() - c.lastTeleport > Config.TELEDELAY) {
+				if (c.playerLevel[6] >= 96) {
+					if (c.getItems().playerHasItem(563, 2) && c.getItems().playerHasItem(555, 8)) {
+						c.getPA().spellTeleport(Config.GHORROCK_X + Misc.random(3), Config.GHORROCK_Y +  Misc.random(2), 0);
+						c.getItems().deleteItem(563, 2);
+						c.getItems().deleteItem(555, 8);
+						c.teleAction = 8;
+						c.lastTeleport = System.currentTimeMillis();
+					} else {
+						c.sendMessage("You do not have enough runes to cast this spell.");
+					}
+				} else {
+					c.sendMessage("You do not have the level required to cast this spell.");
+				}
+			}
+			break;
+            
 			
 	                 
 			case 9125: //Accurate

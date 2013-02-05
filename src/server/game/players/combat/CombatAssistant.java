@@ -365,15 +365,15 @@ public class CombatAssistant{
 					damage2 = 0;
 				}
 				if(c.fightMode == 3) {
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 4); 
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 1);				
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 4); 
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 1);				
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 3);
 					c.getPA().refreshSkill(1);
 					c.getPA().refreshSkill(3);
 					c.getPA().refreshSkill(4);
 				} else {
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE), 4); 
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE), 4); 
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 3);
 					c.getPA().refreshSkill(3);
 					c.getPA().refreshSkill(4);
 				}
@@ -433,8 +433,8 @@ public class CombatAssistant{
 					damage = Server.npcHandler.npcs[i].HP;
 				}
 				
-				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE), 6); 
-				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE/3), 3);
+				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE), 6); 
+				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE/3), 3);
 				c.getPA().refreshSkill(3);
 				c.getPA().refreshSkill(6);
 				if (damage > 0) {
@@ -527,17 +527,17 @@ public class CombatAssistant{
 			}		
 		}
 		if(c.fightMode == 3) {
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 0); 
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 1);
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 2); 				
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 3);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 0); 
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 1);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 2); 				
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 3);
 			c.getPA().refreshSkill(0);
 			c.getPA().refreshSkill(1);
 			c.getPA().refreshSkill(2);
 			c.getPA().refreshSkill(3);
 		} else {
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE), c.fightMode); 
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 3);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE), c.fightMode); 
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 3);
 			c.getPA().refreshSkill(c.fightMode);
 			c.getPA().refreshSkill(3);
 		}
@@ -1084,15 +1084,15 @@ public class CombatAssistant{
 				if (damage2 > 0)
 					applyRecoil(damage2, i);
 				if(c.fightMode == 3) {
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 4); 
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 1);				
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 4); 
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 1);				
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 3);
 					c.getPA().refreshSkill(1);
 					c.getPA().refreshSkill(3);
 					c.getPA().refreshSkill(4);
 				} else {
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE), 4); 
-					c.getPA().addSkillXP((damage*Config.RANGE_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE), 4); 
+					c.getPA().addSkillXP((4*damage*Config.RANGE_EXP_RATE/3), 3);
 					c.getPA().refreshSkill(3);
 					c.getPA().refreshSkill(4);
 				}
@@ -1153,8 +1153,8 @@ public class CombatAssistant{
 					appendVengeance(i, damage);
 				if (damage > 0)
 					applyRecoil(damage, i);
-				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE), 6); 
-				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE/3), 3);
+				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE), 6); 
+				c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE/3), 3);
 				c.getPA().refreshSkill(3);
 				c.getPA().refreshSkill(6);
 				
@@ -1336,8 +1336,8 @@ public class CombatAssistant{
 					if (c2.playerLevel[3] - damage < 0) {
 						damage = c2.playerLevel[3];					
 					}
-					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE), 6); 
-					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE), 6); 
+					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE/3), 3);
 					//Server.playerHandler.players[playerId].setHitDiff(damage);
 					//Server.playerHandler.players[playerId].setHitUpdateRequired(true);
 					Server.playerHandler.players[playerId].handleHitMask(damage);
@@ -1374,8 +1374,8 @@ public class CombatAssistant{
 					if (c2.playerLevel[3] - damage < 0) {
 						damage = c2.playerLevel[3];					
 					}
-					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE), 6); 
-					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + damage*Config.MAGIC_EXP_RATE/3), 3);
+					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE), 6); 
+					c.getPA().addSkillXP((c.MAGIC_SPELLS[c.oldSpellId][7] + 4*damage*Config.MAGIC_EXP_RATE/3), 3);
 					//Server.playerHandler.players[playerId].setHitDiff(damage);
 					//Server.playerHandler.players[playerId].setHitUpdateRequired(true);
 					Server.playerHandler.players[playerId].handleHitMask(damage);
@@ -1530,17 +1530,17 @@ public class CombatAssistant{
 		}
 		c.specEffect = 0;
 		if(c.fightMode == 3) {
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 0); 
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 1);
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 2); 				
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 3);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 0); 
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 1);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 2); 				
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 3);
 			c.getPA().refreshSkill(0);
 			c.getPA().refreshSkill(1);
 			c.getPA().refreshSkill(2);
 			c.getPA().refreshSkill(3);
 		} else {
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE), c.fightMode); 
-			c.getPA().addSkillXP((damage*Config.MELEE_EXP_RATE/3), 3);
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE), c.fightMode); 
+			c.getPA().addSkillXP((4*damage*Config.MELEE_EXP_RATE/3), 3);
 			c.getPA().refreshSkill(c.fightMode);
 			c.getPA().refreshSkill(3);
 		}

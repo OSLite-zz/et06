@@ -7,8 +7,8 @@ public class Config {
 
 	public static final boolean SERVER_DEBUG = false;
 	
-	public static final String SERVER_NAME = "Project 06";
-	public static final String WELCOME_MESSAGE = "Welcome to Project 06.";
+	public static final String SERVER_NAME = "ET06";
+	public static final String WELCOME_MESSAGE = "Welcome to ET06, nigga!";
 	public static final String FORUMS = "Unavailable";
 	
 	public static final int CLIENT_VERSION = 1;
@@ -16,8 +16,8 @@ public class Config {
 	public static int MESSAGE_DELAY = 6000;
 	public static final int ITEM_LIMIT = 16000;
 	public static final int MAXITEM_AMOUNT = Integer.MAX_VALUE;
-	public static final int BANK_SIZE = 352;
-	public static final int MAX_PLAYERS = 1024;
+	public static final int BANK_SIZE = 352;//standard is 352
+	public static final int MAX_PLAYERS = 100;
 	
 	public static final int CONNECTION_DELAY = 100;
 	public static final int IPS_ALLOWED = 3;
@@ -36,9 +36,9 @@ public class Config {
 	
 	public static final int[] FUN_WEAPONS	=	{2460,2461,2462,2463,2464,2465,2466,2467,2468,2469,2470,2471,2471,2473,2474,2475,2476,2477};
 	
-	public static final boolean ADMIN_CAN_TRADE = false;
-	public static final boolean ADMIN_CAN_SELL_ITEMS = false;
-	public static final boolean ADMIN_DROP_ITEMS = false;
+	public static final boolean ADMIN_CAN_TRADE = true;
+	public static final boolean ADMIN_CAN_SELL_ITEMS = true;
+	public static final boolean ADMIN_DROP_ITEMS = true;
 	
 	public static final int START_LOCATION_X = 3222;
 	public static final int START_LOCATION_Y = 3218;
@@ -56,10 +56,10 @@ public class Config {
 	
 	public static final boolean itemRequirements = true;
 		
-	public static final int MELEE_EXP_RATE = 6;
-	public static final int RANGE_EXP_RATE = 6;
-	public static final int MAGIC_EXP_RATE = 6;
-	public static final int SERVER_EXP_BONUS = 2;
+	public static final int MELEE_EXP_RATE = 10;
+	public static final int RANGE_EXP_RATE = 10;
+	public static final int MAGIC_EXP_RATE = 10;
+	public static final int SERVER_EXP_BONUS = 1;
 	
 	public static final int INCREASE_SPECIAL_AMOUNT = 14500;
 	public static final boolean PRAYER_POINTS_REQUIRED = true;
@@ -99,7 +99,7 @@ public class Config {
 			{2607, 526, 1, 0}, {2607, 6529, 2500 + Misc.random(5000), 2}, {2607, 6522, 200 + Misc.random(300), 5},
 			//goblin
 			{101, 526, 1, 0}, {101, 995, 100 + Misc.random(2000), 10},  {101, 6199, 1, 40},
-			// abyssal demon
+			//abyssal demon
 			{1615, 4151, 1, 40}, {1615, 592, 1, 0}, {1615, 995, 50000 + Misc.random(100000),10}, {1615, 565, 200 + Misc.random(200), 12},
 			{1615, 566, 200 + Misc.random(200), 12}, {1615, 560, 200 + Misc.random(200), 12}, {1615, 561, 200 + Misc.random(200), 12},
 			//blue dragon
@@ -215,7 +215,7 @@ public class Config {
 	public static final int LUMBY_X = 3222;
 	public static final int LUMBY_Y = 3218;
 	public static final String LUMBY = "";
-    	public static final int FALADOR_X = 2964;
+    public static final int FALADOR_X = 2964;
 	public static final int FALADOR_Y = 3378;
 	public static final String FALADOR = "";
 	public static final int CAMELOT_X = 2757;
@@ -280,19 +280,19 @@ public class Config {
 	/**
 	* Skill Experience Multipliers
 	*/	
-	public static final int WOODCUTTING_EXPERIENCE = 10;
-	public static final int MINING_EXPERIENCE = 10;
-	public static final int SMITHING_EXPERIENCE = 10;
-	public static final int FARMING_EXPERIENCE = 10;
-	public static final int FIREMAKING_EXPERIENCE = 10;
-	public static final int HERBLORE_EXPERIENCE = 10;
-	public static final int FISHING_EXPERIENCE = 10;
-	public static final int AGILITY_EXPERIENCE = 10;
-	public static final int PRAYER_EXPERIENCE = 1;
-	public static final int RUNECRAFTING_EXPERIENCE = 10;
-	public static final int CRAFTING_EXPERIENCE = 10;
-	public static final int THIEVING_EXPERIENCE = 10;
-	public static final int SLAYER_EXPERIENCE = 10;
-	public static final int COOKING_EXPERIENCE = 10;
-	public static final int FLETCHING_EXPERIENCE = 10;
+	public static final int WOODCUTTING_EXPERIENCE = 100;
+	public static final int MINING_EXPERIENCE = 100;
+	public static final int SMITHING_EXPERIENCE = 100;
+	public static final int FARMING_EXPERIENCE = 100;
+	public static final int FIREMAKING_EXPERIENCE = 100;
+	public static final int HERBLORE_EXPERIENCE = 100;
+	public static final int FISHING_EXPERIENCE = 100;
+	public static final int AGILITY_EXPERIENCE = 100;
+	public static final int PRAYER_EXPERIENCE = 100;
+	public static final int RUNECRAFTING_EXPERIENCE = 100;
+	public static final int CRAFTING_EXPERIENCE = 100;
+	public static final int THIEVING_EXPERIENCE = 100;
+	public static final int SLAYER_EXPERIENCE = 100;
+	public static final int COOKING_EXPERIENCE = 100;
+	public static final int FLETCHING_EXPERIENCE = 100;
 }

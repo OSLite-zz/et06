@@ -324,7 +324,7 @@ public class DialogueHandler {
 		c.nextChat = 1001;
 		break;
 		case 1001:
-		sendPlayerChat1("I would like to access my bank account.");
+		sendPlayerChat1("I would like to access my bank account, please.");
 		c.nextChat = 1002;
 		break;
 		case 1002:
@@ -406,11 +406,11 @@ public class DialogueHandler {
 		c.nextChat = 0;
 		break;
 	 	case 2000:
-	 		sendNpcChat1("Fuck bitchez get MONEY", c.talkingNpc, "");
+	 		sendNpcChat2("Did you know that I completely forgot", "to code this dialogue?", c.talkingNpc, "");
 	 		c.nextChat = 2001;
 	 	break;
 	 	case 2001:
-	 		sendPlayerChat1("Aight nig!");
+	 		sendPlayerChat1("Umm... are you feeling okay?");
 	 		c.nextChat = 0;
 	 		break;
 		}

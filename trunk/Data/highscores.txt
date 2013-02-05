@@ -7,4 +7,5 @@
 5	Lobster	30	1300
 6	Fuck Ethan	30	1300
 7	Led Robster	30	1300
+8	Crab Smacke8	30	1300
 .

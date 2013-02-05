@@ -26,10 +26,10 @@ public class CooksAssistant {
 		client.getPA().sendFrame126("", 8145);
 		if(client.cooksA == 0) {
 			client.getPA().sendFrame126("To start the quest, you should talk with Cook", 8147);
-			client.getPA().sendFrame126("found in Entrana.", 8148);
+			client.getPA().sendFrame126("found in Lumbridge.", 8148);
 		} else if(client.cooksA == 1) {
 			client.getPA().sendFrame126("@str@To start the quest, you should talk with Cook", 8147);
-			client.getPA().sendFrame126("@str@found in Entrana.", 8148);
+			client.getPA().sendFrame126("@str@found in Lumbridge.", 8148);
 			client.getPA().sendFrame126("", 8149);
 			client.getPA().sendFrame126("The cook has asked you to get the following items:", 8150);
 			client.getPA().sendFrame126("A bucket of milk", 8151);
@@ -53,7 +53,7 @@ public class CooksAssistant {
 			client.getPA().sendFrame126("@str@An egg", 8153);
 			client.getPA().sendFrame126("", 8154);
 			client.getPA().sendFrame126("You have completed this quest!", 8155);
-			client.getPA().sendFrame126("The cook gave you some cooking experience as reward.", 8156);
+			client.getPA().sendFrame126("The cook gave you some cooking experience as a reward.", 8156);
 		}
 		client.getPA().showInterface(8134);
 	}

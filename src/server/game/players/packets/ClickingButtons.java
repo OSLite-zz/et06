@@ -218,7 +218,7 @@ public class ClickingButtons implements PacketType {
 			case 59202: // tab 12
 				c.getSI().menuCompilation(12);
 				break;
-			case 59203: // tab 13
+			case 59205: // tab 13
 				c.getSI().menuCompilation(13);
 				break;
 			

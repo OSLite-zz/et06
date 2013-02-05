@@ -1768,9 +1768,6 @@ public class NPCHandler {
 			case 181:
 			int randomer = Misc.random(2);
 			if (randomer == 0 || randomer == 1) {
-                npcs[i].forceChat("I hope it works this time...");
-				//npcs[i].projectileId = -1;
-				//npcs[i].endGfx = -1;
 				npcs[i].attackType = 0; //melee
 			}	
 			break;

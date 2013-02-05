@@ -1232,28 +1232,28 @@ public class SkillInterfaces {
 			menuLine("3", "Attack potion", 121, 0);
 			menuLine("5", "Anti-poison", 175, 1);
 			menuLine("12", "Strength potion", 115, 2);
-			menuLine("22", "Stat restore potion", 127, 3);
+			menuLine("22", "Restore potion", 127, 3);
 			menuLine("26", "Energy potion", 3010, 4);
 			menuLine("30", "Defence potion", 133, 5);
 			menuLine("34", "Agility potion", 3034, 6);
-			menuLine("38", "Prayer restore potion", 139, 7);
-			menuLine("45", "Super Attack potion", 145, 8);
-			menuLine("48", "Super anti-poison", 181, 9);
+			menuLine("38", "Prayer potion", 139, 7);
+			menuLine("45", "Super attack potion", 145, 8);
+			menuLine("48", "Super antipoison", 181, 9);
 			menuLine("50", "Fishing potion", 151, 10);
 			menuLine("52", "Super energy potion", 3018, 11);
-			menuLine("55", "Super Strength potion", 157, 12);
+			menuLine("55", "Super strength potion", 157, 12);
 			menuLine("60", "Weapon poison", 187, 13);
 			menuLine("63", "Super restore potion", 3026, 14);
-			menuLine("66", "Super Defence potion", 163, 15);
+			menuLine("66", "Super defence potion", 163, 15);
 			menuLine("68", "Antidote+", 5945, 16);
 			menuLine("69", "Ranging potion", 169, 17);
 			menuLine("72", "Antifire potion", 2454, 18);
-			menuLine("73", "Weapon poison+", 5937, 19);
+			menuLine("73", "Weapon poison(+)", 5937, 19);
 			menuLine("76", "Magic potion", 3042, 20);
 			menuLine("78", "Zamorak brew", 189, 21);
 			menuLine("79", "Antidote++", 5954, 22);
 			menuLine("81", "Saradomin brew", 6687, 23);
-			menuLine("82", "Weapon poison (super)", 5940, 24);
+			menuLine("82", "Weapon poison(s)", 5940, 24);
 			optionTab("Herblore", "Potions", "Potions", "Herbs", "Milestones",
 					"", "", "", "", "", "", "", "", "", "");
 		}

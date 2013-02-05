@@ -1,5 +1,10 @@
 //Rank# PlayerName TotalLevel XPTotal
-0	Crabsmacker	30	1300
-1	Smackcrabber	30	1300
-2	Scrubdunkerz	30	1300
+0	Xerxes	2079	294000000
+1	Crabsmacker	30	1300
+2	Smackcrabber	30	1300
+3	Scrubdunkerz	30	1300
+4	Crab Smackee	30	1300
+5	Lobster	30	1300
+6	Fuck Ethan	30	1300
+7	Led Robster	30	1300
 .

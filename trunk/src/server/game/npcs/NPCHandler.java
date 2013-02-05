@@ -1767,20 +1767,11 @@ public class NPCHandler {
 			break;
 			case 181:
 			int randomer = Misc.random(2);
-			if (randomer == 0) {
-				npcs[i].projectileId = -1; //melee
-				npcs[i].endGfx = -1;
-				npcs[i].attackType = 0;	
-			} else if (randomer == 1) {
-				npcs[i].projectileId = 178; //snare
-				npcs[i].attackType = 2;
-				npcs[i].endGfx = 180;
-				if (c.freezeTimer <= 0) {
-					c.freezeTimer = 5;
-	                                c.stopMovement();
-	                                c.getCombat().resetPlayerAttack();
-	                                c.sendMessage("You have been frozen.");
-				}
+			if (randomer == 0 || randomer == 1) {
+                npcs[i].forceChat("I hope it works this time...");
+				//npcs[i].projectileId = -1;
+				//npcs[i].endGfx = -1;
+				npcs[i].attackType = 0; //melee
 			}	
 			break;
 			case 2892:

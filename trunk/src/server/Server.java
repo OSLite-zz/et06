@@ -142,7 +142,7 @@ public class Server {
 		HighscoresConfig.loadHighscores();
         
         /**
-         * Load Scripts MIGHT NOT WORK EXPERIMENTAL
+         * Load Scripts MIGHT NOT WORK EXPERIMENTAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
          */
          
         ScriptManager.loadScripts();
@@ -150,7 +150,7 @@ public class Server {
 		/**
 		 * Server Successfully Loaded 
 		 */
-		System.out.println("[Final Stage] Project 06 has been launched on localhost:" + serverlistenerPort + "...");
+		System.out.println("[Final Stage] ET06 -- Niggascape has been launched on localhost:" + serverlistenerPort + "...");
 		/**
 		 * Main Server Tick
 		 */

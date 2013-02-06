@@ -6,6 +6,7 @@ import core.util.Misc;
 public class Config {
 
 	public static final boolean SERVER_DEBUG = false;
+    public static final boolean WOODCUTTING_DEBUG = false;
 	
 	public static final String SERVER_NAME = "ET06";
 	public static final String WELCOME_MESSAGE = "Welcome to ET06, nigga!";

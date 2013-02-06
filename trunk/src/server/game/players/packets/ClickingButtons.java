@@ -124,10 +124,9 @@ public class ClickingButtons implements PacketType {
 				c.getSI().selected = 7;
 				break;
 			case 33210: // agility
-				/*c.getSI().agilityComplex(1);
-				c.getSI().selected = 8;*/
-				c.sendMessage("Skill not supported yet.");
-				break;
+				c.getSI().agilityComplex(1);
+				c.getSI().selected = 8;
+                break;
 			case 33213: // herblore
 				c.getSI().herbloreComplex(1);
 				c.getSI().selected = 9;
@@ -148,7 +147,15 @@ public class ClickingButtons implements PacketType {
 			case 47130:// slayer
 				c.getSI().slayerComplex(1);
 				c.getSI().selected = 13;
-				break;
+                break;
+            case 33208: // mining
+                c.getSI().miningComplex(1);
+                c.getSI().selected = 14;
+                break;
+            case 33211: // smithing
+                c.getSI().smithingComplex(1);
+                c.getSI().selected = 15;
+                break;
 			case 33214: // fishing
 				c.getSI().fishingComplex(1);
 				c.getSI().selected = 16;

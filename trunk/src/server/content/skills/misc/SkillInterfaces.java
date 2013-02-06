@@ -326,23 +326,23 @@ public class SkillInterfaces {
 			clearMenu();
 			String level = "70";
 			String type = "Barrows";
-			menuLine(level, "Ahrim's Staff(With 70 Magic)", 4710, 0);
-			menuLine(level, "Dharok's Greataxe(With 70 Strength)", 4718, 1);
+			menuLine(level, "Ahrim's Staff (With 70 Magic)", 4710, 0);
+			menuLine(level, "Dharok's Greataxe (With 70 Strength)", 4718, 1);
 			menuLine(level, "Guthan's Spear", 4726, 2);
-			menuLine(level, "Torag's Hammers(With 70 Strength", 4747, 3);
+			menuLine(level, "Torag's Hammers (With 70 Strength)", 4747, 3);
 			menuLine(level, "Verac's Flail", 4755, 4);
 			optionTab("Attack", type, "Bronze", "Iron", "Steel", "Black",
 					"White", "Mithril", "Adamant", "Rune", "Dragon", "Barrows",
 					"Special", "Milestones", "");
 		} else if (screen == 11) {
 			clearMenu();
-			menuLine("50", "Leaf-Bladed Spear(With 55 Slayer)", 4158, 0);
-			menuLine("50", "Ancient Staff(With 50 Magic)", 4675, 1);
-			menuLine("60", "TokTz-Xil-Ak(Obsidian Sword)", 6523, 2);
-			menuLine("60", "TzHaar-Ket-Om(Obsidian Maul)", 6528, 3);
-			menuLine("60", "TokTz-Xil-Ek(Obsidian Knife)", 6525, 4);
-			menuLine("60", "TokTz-Mej-Tal(Obsidian Staff)", 6526, 5);
-			menuLine("60", "TokTz-Ket-Em(Obsidian Mace)", 6527, 6);
+			menuLine("50", "Leaf-Bladed Spear (With 55 Slayer)", 4158, 0);
+			menuLine("50", "Ancient Staff (With 50 Magic)", 4675, 1);
+			menuLine("60", "TokTz-Xil-Ak", 6523, 2);
+			menuLine("60", "TzHaar-Ket-Om", 6528, 3);
+			menuLine("60", "TokTz-Xil-Ek", 6525, 4);
+			menuLine("60", "TokTz-Mej-Tal", 6526, 5);
+			menuLine("60", "TokTz-Ket-Em", 6527, 6);
 			menuLine("70", "Abyssal Whip", 4151, 7);
 			optionTab("Attack", "Special", "Bronze", "Iron", "Steel", "Black",
 					"White", "Mithril", "Adamant", "Rune", "Dragon", "Barrows",
@@ -366,23 +366,23 @@ public class SkillInterfaces {
 	public void strengthComplex(int screen) {
 		if (screen == 1) {
 			clearMenu();
-			menuLine("5", "Black Halberd(With 10 Attack)", 3196, 0);
-			menuLine("5", "White Halberd(With 10 Attack)", 6599, 1);
-			menuLine("10", "Mithril Halberd(With 20 Attack)", 3198, 2);
-			menuLine("15", "Adamant Halberd(With 30 Attack)", 3200, 3);
-			menuLine("20", "Rune Halberd(With 40 Attack)", 3202, 4);
-			menuLine("30", "Dragon Halberd(With 60 Attack)", 3204, 5);
-			menuLine("50", "Granite Maul(With 50 Attack)", 4153, 6);
-			menuLine("60", "TzHaar-Ket-Om(Obsidian Maul)", 6528, 7);
-			menuLine("70", "Dharok's Greataxe(With 70 Attack)", 4718, 8);
-			menuLine("70", "Torag's Hammers(With 70 Attack)", 4747, 9);
+			menuLine("5", "Black Halberd (With 10 Attack)", 3196, 0);
+			menuLine("5", "White Halberd (With 10 Attack)", 6599, 1);
+			menuLine("10", "Mithril Halberd (With 20 Attack)", 3198, 2);
+			menuLine("15", "Adamant Halberd (With 30 Attack)", 3200, 3);
+			menuLine("20", "Rune Halberd (With 40 Attack)", 3202, 4);
+			menuLine("30", "Dragon Halberd (With 60 Attack)", 3204, 5);
+			menuLine("50", "Granite Maul (With 50 Attack)", 4153, 6);
+			menuLine("60", "TzHaar-Ket-Om", 6528, 7);
+			menuLine("70", "Dharok's Greataxe (With 70 Attack)", 4718, 8);
+			menuLine("70", "Torag's Hammers (With 70 Attack)", 4747, 9);
 			optionTab("Strength", "Weaponry", "Weaponry", "Armor",
 					"Milestones", "", "", "", "", "", "", "", "", "", "");
 		}
 
 		else if (screen == 2) {
 			clearMenu();
-			menuLine("50", "Granite Shield(With 50 Defence)", 3122, 0);
+			menuLine("50", "Granite Shield (With 50 Defence)", 3122, 0);
 			optionTab("Strength", "Armor", "Weaponry", "Armor", "Milestones",
 					"", "", "", "", "", "", "", "", "", "");
 		}
@@ -592,27 +592,27 @@ public class SkillInterfaces {
 			menuLine("1", "Skeletal Gloves", 6153, 0);
 			menuLine("1", "Skeletal Boots", 6147, 1);
 			menuLine("1", "Elemental Shield", 2890, 2);
-			menuLine("20", "Enchanted Hat(With 40 Magic)", 7400, 3);
-			menuLine("20", "Enchanted Top(With 40 Magic)", 7399, 4);
-			menuLine("20", "Enchanted Robe(With 40 Magic)", 7398, 5);
-			menuLine("20", "Mystic Hat(With 40 Magic)", 4099, 6);
-			menuLine("20", "Mystic Robe Top(With 40 Magic)", 4101, 7);
-			menuLine("20", "Mystic Robe Bottom(With 40 Magic)", 4103, 8);
-			menuLine("20", "Mystic Gloves(With 40 Magic)", 4105, 9);
-			menuLine("20", "Mystic Boots(With 40 Magic)", 4107, 10);
-			menuLine("25", "Infinity Hat(With 50 Magic)", 6918, 11);
-			menuLine("25", "Infinity Top(With 50 Magic)", 6916, 12);
-			menuLine("25", "Infinity Bottoms(With 50 Magic)", 6924, 13);
-			menuLine("25", "Infinity Gloves(With 50 Magic)", 6922, 14);
-			menuLine("25", "Infinity Boots(With 50 Magic)", 6920, 15);
-			menuLine("40", "Splitbark Helm(With 40 Magic)", 3385, 16);
-			menuLine("40", "Splitbark Body(With 40 Magic)", 3387, 17);
-			menuLine("40", "Splitbark Legs(With 40 Magic)", 3389, 18);
-			menuLine("40", "Splitbark Gauntlets(With 40 Magic)", 3391, 19);
-			menuLine("40", "Splitbark Greaves(With 40 Magic)", 3393, 20);
-			menuLine("40", "Skeletal Helm(With 40 Magic)", 6137, 21);
-			menuLine("40", "Skeletal Top(With 40 Magic)", 6139, 22);
-			menuLine("40", "Skeletal Bottoms(With 40 Magic)", 6141, 23);
+			menuLine("20", "Enchanted Hat (With 40 Magic)", 7400, 3);
+			menuLine("20", "Enchanted Top (With 40 Magic)", 7399, 4);
+			menuLine("20", "Enchanted Robe (With 40 Magic)", 7398, 5);
+			menuLine("20", "Mystic Hat (With 40 Magic)", 4099, 6);
+			menuLine("20", "Mystic Robe Top (With 40 Magic)", 4101, 7);
+			menuLine("20", "Mystic Robe Bottom (With 40 Magic)", 4103, 8);
+			menuLine("20", "Mystic Gloves (With 40 Magic)", 4105, 9);
+			menuLine("20", "Mystic Boots (With 40 Magic)", 4107, 10);
+			menuLine("25", "Infinity Hat (With 50 Magic)", 6918, 11);
+			menuLine("25", "Infinity Top (With 50 Magic)", 6916, 12);
+			menuLine("25", "Infinity Bottoms (With 50 Magic)", 6924, 13);
+			menuLine("25", "Infinity Gloves (With 50 Magic)", 6922, 14);
+			menuLine("25", "Infinity Boots (With 50 Magic)", 6920, 15);
+			menuLine("40", "Splitbark Helm (With 40 Magic)", 3385, 16);
+			menuLine("40", "Splitbark Body (With 40 Magic)", 3387, 17);
+			menuLine("40", "Splitbark Legs (With 40 Magic)", 3389, 18);
+			menuLine("40", "Splitbark Gauntlets (With 40 Magic)", 3391, 19);
+			menuLine("40", "Splitbark Greaves (With 40 Magic)", 3393, 20);
+			menuLine("40", "Skeletal Helm (With 40 Magic)", 6137, 21);
+			menuLine("40", "Skeletal Top (With 40 Magic)", 6139, 22);
+			menuLine("40", "Skeletal Bottoms (With 40 Magic)", 6141, 23);
 			menuLine("45", "Farseer Helm", 3755, 24);
 			optionTab("Defence", "Magic", "Bronze", "Iron", "Steel", "Black",
 					"White", "Mithril", "Adamant", "Rune", "Dragon", "Barrows",
@@ -630,25 +630,25 @@ public class SkillInterfaces {
 			menuLine("1", "Rock-Shell Boots", 6145, 6);
 			menuLine("5", "Spiny Helmet", 4551, 7);
 			menuLine("10", "Hardleather Body", 1131, 8);
-			menuLine("20", "Studded Body(With 20 Ranged)", 1133, 9);
-			menuLine("20", "Initiate Helm(With 10 Prayer)", 5574, 10);
-			menuLine("20", "Initiate Platemail(With 10 Prayer)", 5575, 11);
-			menuLine("20", "Initiate Platelegs(With 10 Prayer)", 5576, 12);
-			menuLine("20", "Mirror Shield(with 20 Slayer)", 4156, 13);
-			menuLine("30", "Snakeskin armour(With 30 Ranged)", 6322, 14);
-			menuLine("40", "Green D'hide Body(With 40 Ranged)", 1135, 15);
-			menuLine("40", "Blue D'hide Body(With 40 Ranged)", 2499, 16);
-			menuLine("40", "Red D'hide Body(With 40 Ranged)", 2501, 17);
-			menuLine("40", "Black D'hide Body(With 40 Ranged)", 2503, 18);
-			menuLine("40", "Spined Armour(With 40 Ranged)", 6133, 19);
+			menuLine("20", "Studded Body (With 20 Ranged)", 1133, 9);
+			menuLine("20", "Initiate Helm (With 10 Prayer)", 5574, 10);
+			menuLine("20", "Initiate Platemail (With 10 Prayer)", 5575, 11);
+			menuLine("20", "Initiate Platelegs (With 10 Prayer)", 5576, 12);
+			menuLine("20", "Mirror Shield (with 20 Slayer)", 4156, 13);
+			menuLine("30", "Snakeskin armour (With 30 Ranged)", 6322, 14);
+			menuLine("40", "Green D'hide Body (With 40 Ranged)", 1135, 15);
+			menuLine("40", "Blue D'hide Body (With 40 Ranged)", 2499, 16);
+			menuLine("40", "Red D'hide Body (With 40 Ranged)", 2501, 17);
+			menuLine("40", "Black D'hide Body (With 40 Ranged)", 2503, 18);
+			menuLine("40", "Spined Armour (With 40 Ranged)", 6133, 19);
 			menuLine("40", "Rock-shell Armour", 6129, 20);
 			menuLine("45", "Berserker Helm", 3751, 21);
 			menuLine("45", "Warrior Helm", 3753, 22);
 			menuLine("45", "Archer Helm", 3749, 23);
 			menuLine("45", "Farseer Helm", 3755, 24);
-			menuLine("50", "Granite Shield(With 50 Strength)", 3122, 25);
-			menuLine("60", "TokTz-Ket-Xil(Obsidian Shield)", 6524, 26);
-			menuLine("70", "Crystal Shield(With 50 Agility)", 4224, 27);
+			menuLine("50", "Granite Shield (With 50 Strength)", 3122, 25);
+			menuLine("60", "TokTz-Ket-Xil", 6524, 26);
+			menuLine("70", "Crystal Shield (With 50 Agility)", 4224, 27);
 			optionTab("Defence", "Equipment", "Bronze", "Iron", "Steel",
 					"Black", "White", "Mithril", "Adamant", "Rune", "Dragon",
 					"Barrows", "Magic", "Equipment", "Milestones");
@@ -716,7 +716,7 @@ public class SkillInterfaces {
 			menuLine("40", "Rune Javelin", 830, 23);
 			menuLine("40", "Rune Throwing Axe", 805, 24);
 			menuLine("40", "Rune Throwing Knife", 868, 25);
-			menuLine("60", "TokTz-Xil-Ul(Obsidian Rings)", 6522, 26);
+			menuLine("60", "TokTz-Xil-Ul", 6522, 26);
 			optionTab("Ranged", "Thrown", "Bows", "Thrown", "Armour",
 					"Crossbows", "Other", "Milestones", "", "", "", "", "", "",
 					"");
@@ -725,38 +725,38 @@ public class SkillInterfaces {
 		else if (screen == 3) {
 			clearMenu();
 			menuLine("1", "Leather Items", 1129, 0);
-			menuLine("1", "Hardleather Body(With 10 Defence)", 1131, 1);
+			menuLine("1", "Hardleather Body (With 10 Defence)", 1131, 1);
 			menuLine("1", "Spined Boots", 6143, 2);
 			menuLine("1", "Spined Gloves", 6149, 3);
-			menuLine("1", "Archer Helm(With 45 Defence)", 3749, 4);
-			menuLine("20", "Studded Leather Body(With 20 Defence)", 1133, 5);
+			menuLine("1", "Archer Helm (With 45 Defence)", 3749, 4);
+			menuLine("20", "Studded Leather Body (With 20 Defence)", 1133, 5);
 			menuLine("20", "Studded Leather Chaps", 1097, 6);
 			menuLine("20", "Coif", 1169, 7);
-			menuLine("30", "Snakeskin Body(With 30 Defence)", 6322, 8);
-			menuLine("30", "Snakeskin Chaps(With 30 Defence)", 6324, 9);
-			menuLine("30", "Snakeskin Vambraces(With 30 Defence)", 6330, 10);
-			menuLine("30", "Snakeskin Bandana(With 30 Defence)", 6326, 11);
-			menuLine("30", "Snakeskin Boots(With 30 Defence)", 6328, 12);
+			menuLine("30", "Snakeskin Body (With 30 Defence)", 6322, 8);
+			menuLine("30", "Snakeskin Chaps (With 30 Defence)", 6324, 9);
+			menuLine("30", "Snakeskin Vambraces (With 30 Defence)", 6330, 10);
+			menuLine("30", "Snakeskin Bandana (With 30 Defence)", 6326, 11);
+			menuLine("30", "Snakeskin Boots (With 30 Defence)", 6328, 12);
 			menuLine("40", "Ranger Boots", 2577, 13);
 			menuLine("40", "Robin Hood Hat", 2581, 14);
 			menuLine("40", "Green Dragonhide Vambraces", 1065, 15);
 			menuLine("40", "Green Dragonhide Chaps", 1099, 16);
-			menuLine("40", "Green Dragonhide Body(With 40 Defence)", 1135, 17);
-			menuLine("40", "Spined Body(With 40 Defence)", 6133, 18);
-			menuLine("40", "Spined Chaps(With 40 Defence)", 6135, 19);
-			menuLine("40", "Spined Helm(With 40 Defence)", 6131, 20);
+			menuLine("40", "Green Dragonhide Body (With 40 Defence)", 1135, 17);
+			menuLine("40", "Spined Body (With 40 Defence)", 6133, 18);
+			menuLine("40", "Spined Chaps (With 40 Defence)", 6135, 19);
+			menuLine("40", "Spined Helm (With 40 Defence)", 6131, 20);
 			menuLine("50", "Blue Dragonhide Vambraces", 2487, 21);
 			menuLine("50", "Blue Dragonhide Chaps", 2493, 22);
-			menuLine("50", "Blue Dragonhide Body(With 40 Defence)", 2499, 23);
+			menuLine("50", "Blue Dragonhide Body (With 40 Defence)", 2499, 23);
 			menuLine("60", "Red Dragonhide Vambraces", 2489, 24);
 			menuLine("60", "Red Dragonhide Chaps", 2495, 25);
-			menuLine("60", "Red Dragonhide Body(With 40 Defence)", 2501, 26);
+			menuLine("60", "Red Dragonhide Body (With 40 Defence)", 2501, 26);
 			menuLine("70", "Black Dragonhdie Vambraces", 2491, 27);
 			menuLine("70", "Black Dragonhdie Chaps", 2497, 28);
-			menuLine("70", "Black Dragonhdie Body(With 40 Defence)", 2503, 29);
-			menuLine("70", "Karil's Coif(With 70 Defence)", 4732, 30);
-			menuLine("70", "Karil's Leathertop(With 70 Defence)", 4736, 31);
-			menuLine("70", "Karil's Leatherskirt(With 70 Defence)", 4738, 32);
+			menuLine("70", "Black Dragonhdie Body (With 40 Defence)", 2503, 29);
+			menuLine("70", "Karil's Coif (With 70 Defence)", 4732, 30);
+			menuLine("70", "Karil's Leathertop (With 70 Defence)", 4736, 31);
+			menuLine("70", "Karil's Leatherskirt (With 70 Defence)", 4738, 32);
 			optionTab("Ranged", "Armour", "Bows", "Thrown", "Armour",
 					"Crossbows", "Other", "Milestones", "", "", "", "", "", "",
 					"");
@@ -774,7 +774,7 @@ public class SkillInterfaces {
 
 		else if (screen == 5) {
 			clearMenu();
-			menuLine("50", "Broad Arrow(With 55 Slayer)", 4150, 0);
+			menuLine("50", "Broad Arrow (With 55 Slayer)", 4150, 0);
 			optionTab("Ranged", "Other", "Bows", "Thrown", "Armour",
 					"Crossbows", "Other", "Milestones", "", "", "", "", "", "",
 					"");
@@ -902,35 +902,35 @@ public class SkillInterfaces {
 
 		else if (screen == 3) {
 			clearMenu();
-			menuLine("1", "Farseer Helm(With 45 Defence)", 3755, 0);
+			menuLine("1", "Farseer Helm (With 45 Defence)", 3755, 0);
 			menuLine("1", "Elemental Shield", 2890, 1);
 			menuLine("1", "Skeletal Gloves", 6153, 2);
 			menuLine("1", "Skeletal Boots", 6147, 3);
 			menuLine("20", "Wizard Boots", 2579, 4);
-			menuLine("40", "Mystic Hat(With 20 Defence)", 4099, 5);
-			menuLine("40", "Mystic Robe Top(With 20 Defence)", 4101, 6);
-			menuLine("40", "Mystic Robe Bottom(With 20 Defence)", 4103, 7);
-			menuLine("40", "Mystic Gloves(With 20 Defence)", 4105, 8);
-			menuLine("40", "Mystic Boots(With 20 Defence)", 4107, 9);
-			menuLine("40", "Enchanted Hat(With 20 Defence)", 7400, 10);
-			menuLine("40", "Enchanted Top(With 20 Defence)", 7399, 11);
-			menuLine("40", "Enchanted Robe(With 20 Defence)", 7398, 12);
-			menuLine("40", "Splitbark Helm(With 40 Defence)", 3385, 13);
-			menuLine("40", "Splitbark Body(With 40 Defence)", 3387, 14);
-			menuLine("40", "Splitbark Legs(With 40 Defence)", 3389, 15);
-			menuLine("40", "Splitbark Gauntlets(With 40 Defence)", 3391, 16);
-			menuLine("40", "Splitbark Boots(With 40 Defence)", 3393, 17);
-			menuLine("40", "Skeletal Helmet(With 40 Defence)", 6137, 18);
-			menuLine("40", "Skeletal Top(With 40 Defence)", 6139, 19);
-			menuLine("40", "Skeletal Bottoms(With 40 Defence)", 6141, 20);
-			menuLine("50", "Infinity Hat(With 25 Defence)", 6918, 21);
-			menuLine("50", "Infinity Top(With 25 Defence)", 6916, 22);
-			menuLine("50", "Infinity Bottom(With 25 Defence)", 6924, 23);
-			menuLine("50", "Infinity Boots(With 25 Defence)", 6920, 24);
-			menuLine("50", "Infinity Gloves(with 25 Defence)", 6922, 25);
-			menuLine("70", "Ahrim's Hood(With 70 Defence)", 4708, 26);
-			menuLine("70", "Ahrim's Robe Top(With 70 Defence)", 4712, 27);
-			menuLine("70", "Ahrim's Robeskirt(With 70 Defence)", 4714, 28);
+			menuLine("40", "Mystic Hat (With 20 Defence)", 4099, 5);
+			menuLine("40", "Mystic Robe Top (With 20 Defence)", 4101, 6);
+			menuLine("40", "Mystic Robe Bottom (With 20 Defence)", 4103, 7);
+			menuLine("40", "Mystic Gloves (With 20 Defence)", 4105, 8);
+			menuLine("40", "Mystic Boots (With 20 Defence)", 4107, 9);
+			menuLine("40", "Enchanted Hat (With 20 Defence)", 7400, 10);
+			menuLine("40", "Enchanted Top (With 20 Defence)", 7399, 11);
+			menuLine("40", "Enchanted Robe (With 20 Defence)", 7398, 12);
+			menuLine("40", "Splitbark Helm (With 40 Defence)", 3385, 13);
+			menuLine("40", "Splitbark Body (With 40 Defence)", 3387, 14);
+			menuLine("40", "Splitbark Legs (With 40 Defence)", 3389, 15);
+			menuLine("40", "Splitbark Gauntlets (With 40 Defence)", 3391, 16);
+			menuLine("40", "Splitbark Boots (With 40 Defence)", 3393, 17);
+			menuLine("40", "Skeletal Helmet (With 40 Defence)", 6137, 18);
+			menuLine("40", "Skeletal Top (With 40 Defence)", 6139, 19);
+			menuLine("40", "Skeletal Bottoms (With 40 Defence)", 6141, 20);
+			menuLine("50", "Infinity Hat (With 25 Defence)", 6918, 21);
+			menuLine("50", "Infinity Top (With 25 Defence)", 6916, 22);
+			menuLine("50", "Infinity Bottom (With 25 Defence)", 6924, 23);
+			menuLine("50", "Infinity Boots (With 25 Defence)", 6920, 24);
+			menuLine("50", "Infinity Gloves (with 25 Defence)", 6922, 25);
+			menuLine("70", "Ahrim's Hood (With 70 Defence)", 4708, 26);
+			menuLine("70", "Ahrim's Robe Top (With 70 Defence)", 4712, 27);
+			menuLine("70", "Ahrim's Robeskirt (With 70 Defence)", 4714, 28);
 			optionTab("Magic", "Armour", "Spells", "Ancients", "Armour",
 					"Weapons", "Special", "Milestones", "", "", "", "", "", "",
 					"");
@@ -962,8 +962,8 @@ public class SkillInterfaces {
 			menuLine("60", "Saradomin Staff", 2415, 21);
 			menuLine("60", "Guthix Staff", 2416, 22);
 			menuLine("60", "Zamorak Staff", 2417, 23);
-			menuLine("60", "TokTz-Mej-Tal(Obsidian Staff)", 6526, 24);
-			menuLine("70", "Ahrim's Staff(With 70 Attack)", 4710, 25);
+			menuLine("60", "TokTz-Mej-Tal", 6526, 24);
+			menuLine("70", "Ahrim's Staff (With 70 Attack)", 4710, 25);
 			optionTab("Magic", "Weapons", "Spells", "Ancients", "Armour",
 					"Weapons", "Special", "Milestones", "", "", "", "", "", "",
 					"");
@@ -1134,12 +1134,12 @@ public class SkillInterfaces {
 			menuLine("1", "Gnome Ball", 751, 1);// gnomeball
 			menuLine("1", "Low-Level Agility Arena Obstacles", 2996, 2);// arena
 			// ticket
-			menuLine("20", "Medium-Level Agility Arena )bstacles", 2996, 3);// arena
+			menuLine("20", "Medium-Level Agility Arena Obstacles", 2996, 3);// arena
 			// ticket
 			menuLine("25", "Werewolf Skullball Game", 1061, 4);// boots
 			menuLine("35", "Barbarian Outpost Agility Course", 1365, 5);// steel
 			// baxe
-			menuLine("40", "High-Level Agility Area Obstacles", 2996, 6);
+			menuLine("40", "High-Level Agility Arena Obstacles", 2996, 6);
 			menuLine("48", "Ape Atoll Agility Course", 4024, 7);// greegree
 			menuLine("52", "Wilderness Agility Course", 964, 8);// skull
 			menuLine("60", "Werewolf Agility Course", 6465, 9);// charos
@@ -1158,7 +1158,7 @@ public class SkillInterfaces {
 			menuLine("34", "Karamja Dungeon Pipe Contortion", 6520, 6);
 			menuLine("45", "Isafdar Log Balance", 6519, 7);
 			menuLine("49", "Yanille Dungeon Contortion", 6520, 8);
-			menuLine("50", "Rogues' Den(With 50 Thieving)", 6518, 9);
+			menuLine("50", "Rogues' Den (With 50 Thieving)", 6518, 9);
 			menuLine("67", "Yanille Dungeon Rubble Climb", 6521, 10);
 			optionTab("Agility", "Areas", "Courses", "Areas", "Shortcuts",
 					"Milestones", "", "", "", "", "", "", "", "", "");
@@ -1212,7 +1212,7 @@ public class SkillInterfaces {
 
 		else if (screen == 4) {
 			clearMenu();
-			menuLine("50", "Crystal Equipment", 4207, 0);
+			menuLine("50", "Crystal Equipment", 4224, 0);
 			menuLine("99", "Skill Mastery", c.getItems().skillcapes[c.playerAgility][0], 1);
 			optionTab("Agility", "Milestones", "Courses", "Areas", "Shortcuts",
 					"Milestones", "", "", "", "", "", "", "", "", "");
@@ -1492,10 +1492,10 @@ public class SkillInterfaces {
 
 		else if (screen == 7) {
 			clearMenu();
-			menuLine("54", "Water battlestaff", 1395, 0);
-			menuLine("58", "Earth battlestaff", 1399, 1);
-			menuLine("62", "Fire battlestaff", 1393, 2);
-			menuLine("66", "Air battlestaff", 1397, 3);
+			menuLine("54", "Water Battlestaff", 1395, 0);
+			menuLine("58", "Earth Battlestaff", 1399, 1);
+			menuLine("62", "Fire Battlestaff", 1393, 2);
+			menuLine("66", "Air Battlestaff", 1397, 3);
 			optionTab("Crafting", "Weaponry", "Weaving", "Armour", "Spinning",
 					"Pottery", "Glass", "Jewellery", "Weaponry", "Milestones",
 					"", "", "", "", "");
@@ -1720,15 +1720,15 @@ public class SkillInterfaces {
 	public void smithingComplex(int screen) {
 		if (screen == 1) {
 			clearMenu();
-			menuLine("1", "Bronze(1 Tin Ore + 1 Copper Ore", 2349, 0);
-			menuLine("15", "Iron(50% Chance of Success)", 2351, 1);
-			menuLine("20", "Elemental Metal(After Elemental Workshop", 2893, 2);
+			menuLine("1", "Bronze", 2349, 0);
+			menuLine("15", "Iron (50% Chance of Success)", 2351, 1);
+			menuLine("20", "Elemental Metal (After Elemental Workshop)", 2893, 2);
 			menuLine("20", "Silver", 2355, 3);
-			menuLine("30", "Steel(2 Coal + 1 Iron Ore", 2353, 4);
+			menuLine("30", "Steel", 2353, 4);
 			menuLine("40", "Gold", 2357, 5);
-			menuLine("50", "Mithril(4 Coal + 1 Mithril Ore", 2359, 6);
-			menuLine("70", "Adamant(6 Coal + 1 Adamantite Ore", 2361, 7);
-			menuLine("85", "Runite(8 Coal + 1 Runite Ore", 2363, 8);
+			menuLine("50", "Mithril", 2359, 6);
+			menuLine("70", "Adamant", 2361, 7);
+			menuLine("85", "Runite", 2363, 8);
 			optionTab("Smithing", "Smelting", "Smelting", "Bronze", "Iron",
 					"Steel", "Mithril", "Adamantite", "Runite", "Gold",
 					"Elemental", "Other", "Milestones", "", "");
@@ -1756,7 +1756,7 @@ public class SkillInterfaces {
 			menuLine("10", type + " Battleaxe - 3 Bars", 1375, 16);
 			menuLine("11", type + " Chainbody - 3 Bars", 1103, 17);
 			menuLine("12", type + " Kiteshield - 3 Bars", 1189, 18);
-			menuLine("13", type + " Claws(After Death Plateu) - 2 Bars", 3095,
+			menuLine("13", type + " Claws(After Death Plateau) - 2 Bars", 3095,
 					19);
 			menuLine("14", type + " Two-Handed Sword - 3 Bars", 1307, 20);
 			menuLine("16", type + " Platelegs - 3 Bars", 1075, 21);
@@ -1775,7 +1775,7 @@ public class SkillInterfaces {
 			menuLine("18", type + " Med Helm - 1 Bar", 1137, 4);
 			menuLine("19", type + " Sword - 1 Bar", 1279, 5);
 			menuLine("19", type + " Dart Tips - 1 Bar makes 10", 820, 6);
-			menuLine("19", type + " Nails - 1 Bar makes 15", 4819, 7);
+			menuLine("19", type + " Nails - 1 Bar makes 15", 4820, 7);
 			menuLine("20", type + " Scimitar - 2 Bars", 1323, 8);
 			menuLine("20", type + " Spear - 1 Bar + 1 Log", 1239, 9);
 			menuLine("20", type + " Arrowhead - 1 Bar makes 15", 40, 10);
@@ -1788,10 +1788,10 @@ public class SkillInterfaces {
 			menuLine("26", type + " Chainbody - 3 Bars", 1101, 17);
 			menuLine("26", "Oil Lantern Frame - 1 Bar", 4540, 18);
 			menuLine("27", type + " Kiteshield - 3 Bars", 1191, 19);
-			menuLine("28", type + " Claws(After Death Plateu) - 2 Bars", 3096,
+			menuLine("28", type + " Claws(After Death Plateau) - 2 Bars", 3096,
 					20);
 			menuLine("29", type + " Two-Handed Sword - 3 Bars", 1309, 21);
-			menuLine("31", type + " Platelegs - 3 Bars", 1077, 22);
+			menuLine("31", type + " Platelegs - 3 Bars", 1067, 22);
 			menuLine("31", type + " Plateskirt - 3 Bars", 1081, 23);
 			menuLine("33", type + " Platebody - 5 Bars", 1115, 24);
 			optionTab("Smithing", "Iron", "Smelting", "Bronze", "Iron",
@@ -1821,7 +1821,7 @@ public class SkillInterfaces {
 			menuLine("40", type + " Battleaxe - 3 Bars", 1365, 16);
 			menuLine("41", type + " Chainbody - 3 Bars", 1105, 17);
 			menuLine("42", type + " Kiteshield - 3 Bars", 1193, 18);
-			menuLine("43", type + " Claws(After Death Plateu) - 2 Bars", 3097,
+			menuLine("43", type + " Claws(After Death Plateau) - 2 Bars", 3097,
 					19);
 			menuLine("44", type + " Two-Handed Sword - 3 Bars", 1311, 20);
 			menuLine("46", type + " Platelegs - 3 Bars", 1069, 21);
@@ -1850,8 +1850,8 @@ public class SkillInterfaces {
 			menuLine("59", type + " Warhammer - 3 Bars", 1343, 14);
 			menuLine("60", type + " Battleaxe - 3 Bars", 1369, 15);
 			menuLine("61", type + " Chainbody - 3 Bars", 1109, 16);
-			menuLine("62", type + " Kiteshield - 3 Bars", 1189, 17);
-			menuLine("63", type + " Claws(After Death Plateu) - 2 Bars", 3099,
+			menuLine("62", type + " Kiteshield - 3 Bars", 1197, 17);
+			menuLine("63", type + " Claws(After Death Plateau) - 2 Bars", 3099,
 					18);
 			menuLine("64", type + " Two-Handed Sword - 3 Bars", 1315, 19);
 			menuLine("66", type + " Platelegs - 3 Bars", 1071, 20);
@@ -1877,11 +1877,11 @@ public class SkillInterfaces {
 			menuLine("77", type + " Full Helm - 2 Bars", 1161, 11);
 			menuLine("77", type + " Throwing Knife", 867, 12);
 			menuLine("78", type + " Square Shield - 2 Bars", 1183, 13);
-			menuLine("79", type + " Warhammer - 3 Bars", 1343, 14);
+			menuLine("79", type + " Warhammer - 3 Bars", 1345, 14);
 			menuLine("80", type + " Battleaxe - 3 Bars", 1371, 15);
 			menuLine("81", type + " Chainbody - 3 Bars", 1111, 16);
 			menuLine("82", type + " Kiteshield - 3 Bars", 1199, 17);
-			menuLine("83", type + " Claws(After Death Plateu) - 2 Bars", 3100,
+			menuLine("83", type + " Claws(After Death Plateau) - 2 Bars", 3100,
 					18);
 			menuLine("84", type + " Two-Handed Sword - 3 Bars", 1317, 19);
 			menuLine("86", type + " Platelegs - 3 Bars", 1073, 20);
@@ -1922,22 +1922,22 @@ public class SkillInterfaces {
 					"Elemental", "Other", "Milestones", "", "");
 		} else if (screen == 8) {
 			clearMenu();
-			menuLine("50", "Gold Bowl(After Starting Legends' Quest", 721, 0);
-			menuLine("50", "Gold Helmet(After starting Between a Rock...",
+			menuLine("50", "Gold Bowl (After Starting Legends' Quest)", 721, 0);
+			menuLine("50", "Gold Helmet (After starting Between a Rock...)",
 					4567, 1);
 			optionTab("Smithing", "Gold", "Smelting", "Bronze", "Iron",
 					"Steel", "Mithril", "Adamantite", "Runite", "Gold",
 					"Elemental", "Other", "Milestones", "", "");
 		} else if (screen == 9) {
 			clearMenu();
-			menuLine("20", "Elemental Shield(After Elemental Workshop)", 2890,
+			menuLine("20", "Elemental Shield (After Elemental Workshop)", 2890,
 					0);
 			optionTab("Smithing", "Elemental", "Smelting", "Bronze", "Iron",
 					"Steel", "Mithril", "Adamantite", "Runite", "Gold",
 					"Elemental", "Other", "Milestones", "", "");
 		} else if (screen == 10) {
 			clearMenu();
-			menuLine("60", "Dragon Square Shield", 1187, 0);
+			menuLine("60", "Dragon Sq Shield (After Legend's Quest)", 1187, 0);
 			optionTab("Smithing", "Other", "Smelting", "Bronze", "Iron",
 					"Steel", "Mithril", "Adamantite", "Runite", "Gold",
 					"Elemental", "Other", "Milestones", "", "");

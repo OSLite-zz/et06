@@ -1116,7 +1116,7 @@ public class ClickingButtons implements PacketType {
 			case 21011:
 			c.takeAsNote = false;
 			break;
-                        //home teleports(?)
+                        //home teleports
 			case 4171:
 			case 50056:
 			c.getPA().spellTeleport(Config.LUMBY_X, Config.LUMBY_Y, 0);

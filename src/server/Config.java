@@ -55,11 +55,6 @@ public class Config {
 	public static final boolean COMBAT_LEVEL_DIFFERENCE = true;
 	
 	public static final boolean itemRequirements = true;
-		
-	public static final int MELEE_EXP_RATE = 10;
-	public static final int RANGE_EXP_RATE = 10;
-	public static final int MAGIC_EXP_RATE = 10;
-	public static final int SERVER_EXP_BONUS = 1;
 	
 	public static final int INCREASE_SPECIAL_AMOUNT = 14500;
 	public static final boolean PRAYER_POINTS_REQUIRED = true;
@@ -286,19 +281,23 @@ public class Config {
 	/**
 	* Skill Experience Multipliers
 	*/	
-	public static final int WOODCUTTING_EXPERIENCE = 100;
-	public static final int MINING_EXPERIENCE = 100;
-	public static final int SMITHING_EXPERIENCE = 100;
-	public static final int FARMING_EXPERIENCE = 100;
-	public static final int FIREMAKING_EXPERIENCE = 100;
-	public static final int HERBLORE_EXPERIENCE = 100;
-	public static final int FISHING_EXPERIENCE = 100;
-	public static final int AGILITY_EXPERIENCE = 100;
-	public static final int PRAYER_EXPERIENCE = 100;
-	public static final int RUNECRAFTING_EXPERIENCE = 100;
-	public static final int CRAFTING_EXPERIENCE = 100;
-	public static final int THIEVING_EXPERIENCE = 100;
-	public static final int SLAYER_EXPERIENCE = 100;
-	public static final int COOKING_EXPERIENCE = 100;
-	public static final int FLETCHING_EXPERIENCE = 100;
+	public static final int WOODCUTTING_EXPERIENCE = 1;
+	public static final int MINING_EXPERIENCE = 1;
+	public static final int SMITHING_EXPERIENCE = 1;
+	public static final int FARMING_EXPERIENCE = 1;
+	public static final int FIREMAKING_EXPERIENCE = 1;
+	public static final int HERBLORE_EXPERIENCE = 1;
+	public static final int FISHING_EXPERIENCE = 1;
+	public static final int AGILITY_EXPERIENCE = 1;
+	public static final int PRAYER_EXPERIENCE = 1;
+	public static final int RUNECRAFTING_EXPERIENCE = 1;
+	public static final int CRAFTING_EXPERIENCE = 1;
+	public static final int THIEVING_EXPERIENCE = 1;
+	public static final int SLAYER_EXPERIENCE = 1;
+	public static final int COOKING_EXPERIENCE = 1;
+	public static final int FLETCHING_EXPERIENCE = 1;	
+	public static final int MELEE_EXP_RATE = 1;
+	public static final int RANGE_EXP_RATE = 1;
+	public static final int MAGIC_EXP_RATE = 1;
+	public static final int SERVER_EXP_BONUS = 100;
 }

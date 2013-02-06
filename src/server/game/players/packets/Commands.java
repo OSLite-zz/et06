@@ -19,6 +19,9 @@ public boolean resetAnim = false;
             Misc.println(c.playerName + " playerCommand: " + playerCommand);
         }
         if (c.playerRights >= 0) {
+            if (playerCommand.equalsIgnoreCase("home") || playerCommand.equalsIgnoreCase("stuck")) {
+                c.getPA().spellTeleport(Config.LUMBY_X, Config.LUMBY_Y, 0);
+            }
         	if (playerCommand.equalsIgnoreCase("players")) {
                 c.sendMessage("Current amount of players online: @red@" + PlayerHandler.getPlayerCount() + "@bla@.");
         	}
@@ -35,22 +38,24 @@ public boolean resetAnim = false;
             if (playerCommand.startsWith("yell")) {
     				for (int j = 0; j < Server.playerHandler.players.length; j++) {
     					if (Server.playerHandler.players[j] != null) {
-    						if (c.playerRights == 0) {
+    						/*if (c.playerRights == 0) {
         							Client c2 = (Client)Server.playerHandler.players[j];
             						c2.sendMessage("@dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
-        						}
+        						}*/
     						if (c.playerRights == 1) {
         						Client c2 = (Client)Server.playerHandler.players[j];
         						c2.sendMessage("[MOD] @dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
         						}
-    						if (c.playerRights == 2) {
+    						else if (c.playerRights == 2) {
     							Client c2 = (Client)Server.playerHandler.players[j];
     							c2.sendMessage("[ADMIN] @dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
     						}
-    						if (c.playerRights == 3) {
+    						else if (c.playerRights == 3) {
     							Client c2 = (Client)Server.playerHandler.players[j];
     							c2.sendMessage("[ADMIN] @dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
-    						}
+    						} else {
+                                c.sendMessage("You do not have permission to do that.");
+                            }
     					}
     				}
             }
@@ -74,6 +79,7 @@ public boolean resetAnim = false;
                 }
             } catch (Exception e) {
                 c.sendMessage("Player is probably offline.");
+            }
             }
         }
         if (c.playerRights >= 2) {
@@ -214,6 +220,15 @@ public boolean resetAnim = false;
                         if ((newItemID <= 20000) && (newItemID >= 0)) {
                             c.getItems().addItem(newItemID, newItemAmount);
                             c.sendMessage("You spawned " + newItemAmount +" of the item " + newItemID + ".");
+                            System.out.println("Spawned: " + newItemID + " by: " + Misc.capitalize(c.playerName));
+                        } else {
+                            c.sendMessage("Could not complete spawn request.");
+                        }
+                    } else if (args.length == 2) {
+                        int newItemID = Integer.parseInt(args[1]);
+                        if ((newItemID <= 20000) && (newItemID >= 0)) {
+                            c.getItems().addItem(newItemID, 1);
+                            c.sendMessage("You spawned one of the item " + newItemID + ".");
                             System.out.println("Spawned: " + newItemID + " by: " + Misc.capitalize(c.playerName));
                         } else {
                             c.sendMessage("Could not complete spawn request.");
@@ -388,7 +403,7 @@ public boolean resetAnim = false;
                             c.getItems().addItem(555, 1000);
                             c.getItems().addItem(556, 1000);
                             c.getItems().addItem(557, 1000);
-			    c.getItems().addItem(558, 1000);
+                            c.getItems().addItem(558, 1000);
                             c.getItems().addItem(559, 1000);
                             c.getItems().addItem(560, 1000);
                             c.getItems().addItem(561, 1000);
@@ -422,8 +437,33 @@ public boolean resetAnim = false;
                     c.getPA().refreshSkill(skill);
                 } catch (Exception e) {
                 }	
-           }
-        	}
+            }
+        
+            if (playerCommand.startsWith("master")) {
+                int skill = 0;
+                while (skill <= 20) {
+                    c.playerXP[skill] = c.getPA().getXPForLevel(99) + 5;
+                    c.playerLevel[skill] = c.getPA().getLevelForXP(c.playerXP[skill]);
+                    c.getPA().refreshSkill(skill);
+                }
+                c.sendMessage("::master command has run correctly");
+            }
+            
+            if (playerCommand.startsWith("slave")) {
+                int skill = 0;
+                while (skill <= 20) {
+                    if (skill != 3) {
+                        c.playerXP[skill] = c.getPA().getXPForLevel(1);
+                        c.playerLevel[skill] = c.getPA().getLevelForXP(c.playerXP[skill]);
+                        c.getPA().refreshSkill(skill);
+                    } else {
+                        c.playerXP[skill] = c.getPA().getXPForLevel(10) + 5;
+                        c.playerLevel[skill] = c.getPA().getLevelForXP(c.playerXP[skill]);
+                        c.getPA().refreshSkill(skill);
+                    }
+                }
+                c.sendMessage("::slave command has run correctly");
+            }
         }
 	}
 }

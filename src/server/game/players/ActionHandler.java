@@ -22,6 +22,9 @@ public class ActionHandler {
 	public void firstClickObject(int objectType, int obX, int obY) {
 		c.clickObjectType = 0;
 		if (Woodcutting.playerTrees(c, objectType)) {
+            if (Config.WOODCUTTING_DEBUG) {
+                c.sendMessage("good, this went through.");
+            }
 			Woodcutting.attemptData(c, objectType, obX, obY);
 			return;
 		}

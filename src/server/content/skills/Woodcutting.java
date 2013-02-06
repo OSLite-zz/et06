@@ -57,9 +57,9 @@ public class Woodcutting extends SkillHandler {
 		}
 
 		c.startAnimation(c.playerSkillProp[8][4]);
-		for(int i = 0; i < trees.length; i++) {
-			for(int l = 0; l < 6; l++) 
-				if(tree == trees[l][i]) {
+		for(int i = 0; i < 6; i++) {
+			for(int l = 0; l < trees[i].length; l++) 
+				if(tree == trees[i][l]) {
 					CycleEventHandler.getSingleton().addEvent(c, new CycleEvent() {
 						@Override
 						public void execute(CycleEventContainer container) {
@@ -123,15 +123,22 @@ public class Woodcutting extends SkillHandler {
 	}
 
 	public static boolean playerTrees(Client c, int tree) {
-		boolean trees2 = false;
-		for(int i = 0; i < trees.length; i++) {
-			for(int i1 = 0; i1 < 6; i1++) {
-				if(tree == trees[i1][i]){
-					trees2 = true;
+		boolean isTree = false;
+        if (Config.WOODCUTTING_DEBUG) {
+            c.sendMessage("The ID of this tree is "+tree);
+        }
+		for(int i = 0; i < 6; i++) {
+			for(int j = 0; j < trees[i].length; j++) {
+				if(tree == trees[i][j]){
+					isTree = true;
 				}
 			}
 		}
-		return trees2;
+        if (Config.WOODCUTTING_DEBUG) {
+            if (isTree == false)
+                c.sendMessage("Apparently that's not a tree...");
+        }
+		return isTree;
 	}
 
 	private static void treeLocated(Client c, int obX, int obY) {
@@ -196,20 +203,22 @@ public class Woodcutting extends SkillHandler {
 
 	private static int getTreeLog(Client c, int l) {
 		c.playerSkillProp[8][6] = -1;
-		for(int i = 0; i < trees.length; i++) {
- 			if(l== trees[5][i]) {
-				c.playerSkillProp[8][6] = 1513;
-			} else if(l == trees[4][i]) {
-				c.playerSkillProp[8][6] = 1515;
-			} else if(l == trees[3][i]) {
-				c.playerSkillProp[8][6] = 1517;
-			} else if(l == trees[2][i]) {
-				c.playerSkillProp[8][6] = 1519;
-			} else if(l == trees[1][i]) {
-				c.playerSkillProp[8][6] = 1521;
-			} else if(l == trees[0][i]) {
-				c.playerSkillProp[8][6] = 1511;
+		for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < trees[i].length; j++) {
+                if(l == trees[i][j] && i == 5) {
+                    c.playerSkillProp[8][6] = 1513;
+                } else if(l == trees[i][j] && i == 4) {
+                    c.playerSkillProp[8][6] = 1515;
+                } else if(l == trees[i][j] && i == 3) {
+                    c.playerSkillProp[8][6] = 1517;
+                } else if(l == trees[i][j] && i == 2) {
+                    c.playerSkillProp[8][6] = 1519;
+                } else if(l == trees[i][j] && i == 1) {
+                    c.playerSkillProp[8][6] = 1521;
+                } else if(l == trees[i][j] && i == 0) {
+                    c.playerSkillProp[8][6] = 1511;
 			}
+            }
 		}
 		return c.playerSkillProp[8][6];
 	}
@@ -240,47 +249,51 @@ public class Woodcutting extends SkillHandler {
 
 	private static int recieveXP(Client c, int treep) {
 		c.playerSkillProp[8][3] = -1;
-		for(int i = 0; i < trees.length; i++) {
-			if(treep == trees[5][i]) {
-				c.playerSkillProp[8][3] = 250;
-			} else if(treep == trees[4][i]) {
-				c.playerSkillProp[8][3] = 175;
-			} else if(treep == trees[3][i]) {
-				c.playerSkillProp[8][3] = 100;
-			} else if(treep == trees[2][i]) {
-				c.playerSkillProp[8][3] = 68;
-			} else if(treep == trees[1][i]) {
-				c.playerSkillProp[8][3] = 38;
-			} else if(treep == trees[0][i]) {
-				c.playerSkillProp[8][3] = 25;
-			}
+		for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < trees[i].length; j++) {
+                if(treep == trees[i][j] && i == 5) {
+                    c.playerSkillProp[8][3] = 250;
+                } else if(treep == trees[i][j] && i == 4) {
+                    c.playerSkillProp[8][3] = 175;
+                } else if(treep == trees[i][j] && i == 3) {
+                    c.playerSkillProp[8][3] = 100;
+                } else if(treep == trees[i][j] && i == 2) {
+                    c.playerSkillProp[8][3] = 68;
+                } else if(treep == trees[i][j] && i == 1) {
+                    c.playerSkillProp[8][3] = 38;
+                } else if(treep == trees[i][j] && i == 0) {
+                    c.playerSkillProp[8][3] = 25;
+                }
+            }
 		}
 		return c.playerSkillProp[8][3];
 	}
 
 	private static int getRespawnTime(Client c, int treep) {
 		int respawn = -1;
-		for(int i = 0; i < trees.length; i++) {
-			if(treep == trees[5][i]) {
-					respawn = 100;	//1 Minute
-			} else if(treep == trees[4][i]) {
-					respawn = 50;	//30
-			} else if(treep == trees[3][i]) {
-					respawn = 25;	//15
-			} else if(treep == trees[2][i]) {
-					respawn = 25;	//15
-			} else if(treep == trees[1][i]) {
+		for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < trees[i].length; j++) {
+                if(treep == trees[i][j] && i == 5) {
+                    respawn = 100;	//1 Minute
+                } else if(treep == trees[i][j] && i == 4) {
+                    respawn = 50;	//30
+                } else if(treep == trees[i][j] && i == 3) {
+                    respawn = 25;	//15
+                } else if(treep == trees[i][j] && i == 2) {
+                    respawn = 25;	//15
+                } else if(treep == trees[i][j] && i == 1) {
 					respawn = 15;	//9
-			} else if(treep == trees[0][i]) {
-					respawn = 10;	//6
-			}
+                } else if(treep == trees[i][j] && i == 0) {
+                    respawn = 10;	//6
+                }
+            }
 		}
 		return respawn;
 	}
 
 	private static boolean normalTree(Client c, int treep) {
 		boolean normal = false;
-		for(int i = 0; i < trees.length; i++) {
+		for(int i = 0; i < trees[0].length; i++) {
 			if(treep == trees[0][i]) {
 				normal = true;
 			}
@@ -291,7 +304,7 @@ public class Woodcutting extends SkillHandler {
 	private static boolean canUseAxe(Client c) {
 		boolean axe = false;
 		if(performCheck(c, 1349, 1) || performCheck(c, 1351, 1) 
-			|| performCheck(c, 1353, 6) || performCheck(c, 1361, 11) 
+			|| performCheck(c, 1353, 6) || performCheck(c, 1361, 6) 
 			|| performCheck(c, 1355, 21) || performCheck(c, 1357, 31)
 			|| performCheck(c, 1359, 41) || performCheck(c, 6739, 61)) {
 			axe = true;
@@ -305,20 +318,22 @@ public class Woodcutting extends SkillHandler {
 
 	private static int getRequiredLevel(Client c, int treep) {
 		int level = -1;
-		for(int i = 0; i < trees.length; i++) {
-			if(treep == trees[5][i]) {
+		for(int i = 0; i < 6; i++) {
+            for(int j = 0; j < trees[i].length; j++) {
+                if(treep == trees[i][j] && i == 5) {
 					level = 75;
-			} else if(treep == trees[4][i]) {
+                } else if(treep == trees[i][j] && i == 4) {
 					level = 60;
-			} else if(treep == trees[3][i]) {
+                } else if(treep == trees[i][j] && i == 3) {
 					level = 45;
-			} else if(treep == trees[2][i]) {
+                } else if(treep == trees[i][j] && i == 2) {
 					level = 30;
-			} else if(treep == trees[1][i]) {
+                } else if(treep == trees[i][j] && i == 1) {
 					level = 15;
-			} else if(treep == trees[0][i]) {
+                } else if(treep == trees[i][j] && i == 0) {
 					level = 1;
-			}
+                }
+            }
 		}
 		return level;
 	}
@@ -336,7 +351,7 @@ public class Woodcutting extends SkillHandler {
 
 	private static int[][] trees = {
 		{	//	NORMAL
-			3883, 3879, 3882, 3881, 1281, 1282, 1278, 
+			3883, 3879, 3882, 3881, 1281, 1282, 1276, 1278,
 			1283, 1284, 1285, 1286, 1287, 1288, 
 			1289, 1290, 1291, 1301, 1303, 1304, 
 			1305, 1318, 1319, 1315, 1316, 1330, 

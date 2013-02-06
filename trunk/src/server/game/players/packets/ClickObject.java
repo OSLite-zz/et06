@@ -206,15 +206,14 @@ public class ClickObject implements PacketType {
 				c.objectXOffset = 1;
 				c.objectYOffset = 1;
 				break;
-				case 1276:
 				case 3879:
 				case 3883:
-				case 1278://trees
-				case 1281: //oak
-                c.objectDistance = 2;
-                break;
+				case 1278:
+                case 1276: //trees
 				case 1308: //willow
 				case 1307: //maple
+                c.objectDistance = 2;
+				case 1281: //oak
 				case 1309: //yew
 				case 1306: //yew
 				c.objectDistance = 3;

@@ -2020,11 +2020,11 @@ public class PlayerAssistant{
 		sendFrame126("Total Lvl: "+totalLevel, 3984);
 		switch(skill) {
 			case 0:
-			sendFrame126("Congratulations, you just advanced an attack level!", 6248);
-			sendFrame126("Your attack level is now "+getLevelForXP(c.playerXP[skill])+".", 6249);
-			c.sendMessage("Congratulations, you just advanced an attack level.");	
+			sendFrame126("Congratulations, you just advanced an Attack level!", 6248);
+			sendFrame126("Your Attack level is now "+getLevelForXP(c.playerXP[skill])+".", 6249);
+			c.sendMessage("Congratulations, you just advanced an Attack level.");	
 			sendFrame164(6247);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
                         c.getItems().addItem(9748,1);
                         c.getItems().addItem(9749,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2037,11 +2037,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 1:
-            sendFrame126("Congratulations, you just advanced a defence level!", 6254);
-            sendFrame126("Your defence level is now "+getLevelForXP(c.playerXP[skill])+".", 6255);
-            c.sendMessage("Congratulations, you just advanced a defence level.");
+            sendFrame126("Congratulations, you just advanced a Defence level!", 6254);
+            sendFrame126("Your Defence level is now "+getLevelForXP(c.playerXP[skill])+".", 6255);
+            c.sendMessage("Congratulations, you just advanced a Defence level.");
 			sendFrame164(6253);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
                c.getItems().addItem(9754,1);
                c.getItems().addItem(9755,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2054,11 +2054,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 2:
-            sendFrame126("Congratulations, you just advanced a strength level!", 6207);
-            sendFrame126("Your strength level is now "+getLevelForXP(c.playerXP[skill])+".", 6208);
-            c.sendMessage("Congratulations, you just advanced a strength level.");
+            sendFrame126("Congratulations, you just advanced a Strength level!", 6207);
+            sendFrame126("Your Strength level is now "+getLevelForXP(c.playerXP[skill])+".", 6208);
+            c.sendMessage("Congratulations, you just advanced a Strength level.");
 			sendFrame164(6206);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9751,1);
             c.getItems().addItem(9752,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2071,11 +2071,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 3:
-            sendFrame126("Congratulations, you just advanced a hitpoints level!", 6217);
-            sendFrame126("Your hitpoints level is now "+getLevelForXP(c.playerXP[skill])+".", 6218);
-            c.sendMessage("Congratulations, you just advanced a hitpoints level.");
+            sendFrame126("Congratulations, you just advanced a Hitpoints level!", 6217);
+            sendFrame126("Your Hitpoints level is now "+getLevelForXP(c.playerXP[skill])+".", 6218);
+            c.sendMessage("Congratulations, you just advanced a Hitpoints level.");
 			sendFrame164(6216);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9769,1);
             c.getItems().addItem(9770,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2088,11 +2088,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 4:
-            sendFrame126("Congratulations, you just advanced a ranged level!", 5453);
-            sendFrame126("Your ranged level is now "+getLevelForXP(c.playerXP[skill])+".", 6114);
-            c.sendMessage("Congratulations, you just advanced a ranging level.");
+            sendFrame126("Congratulations, you just advanced a Ranged level!", 5453);
+            sendFrame126("Your Ranged level is now "+getLevelForXP(c.playerXP[skill])+".", 6114);
+            c.sendMessage("Congratulations, you just advanced a Ranging level.");
 			sendFrame164(4443);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9757,1);
             c.getItems().addItem(9758,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2105,11 +2105,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 5:
-            sendFrame126("Congratulations, you just advanced a prayer level!", 6243);
-            sendFrame126("Your prayer level is now "+getLevelForXP(c.playerXP[skill])+".", 6244);
-            c.sendMessage("Congratulations, you just advanced a prayer level.");
+            sendFrame126("Congratulations, you just advanced a Prayer level!", 6243);
+            sendFrame126("Your Prayer level is now "+getLevelForXP(c.playerXP[skill])+".", 6244);
+            c.sendMessage("Congratulations, you just advanced a Prayer level.");
 			sendFrame164(6242);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9760,1);
             c.getItems().addItem(9761,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2122,11 +2122,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 6:
-            sendFrame126("Congratulations, you just advanced a magic level!", 6212);
-            sendFrame126("Your magic level is now "+getLevelForXP(c.playerXP[skill])+".", 6213);
-            c.sendMessage("Congratulations, you just advanced a magic level.");
+            sendFrame126("Congratulations, you just advanced a Magic level!", 6212);
+            sendFrame126("Your Magic level is now "+getLevelForXP(c.playerXP[skill])+".", 6213);
+            c.sendMessage("Congratulations, you just advanced a Magic level.");
 			sendFrame164(6211);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9757,1);
 			c.getItems().addItem(9758,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2139,11 +2139,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 7:
-            sendFrame126("Congratulations, you just advanced a cooking level!", 6227);
-            sendFrame126("Your cooking level is now "+getLevelForXP(c.playerXP[skill])+".", 6228);
-            c.sendMessage("Congratulations, you just advanced a cooking level.");
+            sendFrame126("Congratulations, you just advanced a Cooking level!", 6227);
+            sendFrame126("Your Cooking level is now "+getLevelForXP(c.playerXP[skill])+".", 6228);
+            c.sendMessage("Congratulations, you just advanced a Cooking level.");
 			sendFrame164(6226);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9802,1);
 			c.getItems().addItem(9803,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2156,11 +2156,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 8:
-			sendFrame126("Congratulations, you just advanced a woodcutting level!", 4273);
-			sendFrame126("Your woodcutting level is now "+getLevelForXP(c.playerXP[skill])+".", 4274);
-			c.sendMessage("Congratulations, you just advanced a woodcutting level.");
+			sendFrame126("Congratulations, you just advanced a Woodcutting level!", 4273);
+			sendFrame126("Your Woodcutting level is now "+getLevelForXP(c.playerXP[skill])+".", 4274);
+			c.sendMessage("Congratulations, you just advanced a Woodcutting level.");
 			sendFrame164(4272);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9808,1);
 			c.getItems().addItem(9809,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2173,11 +2173,11 @@ public class PlayerAssistant{
             break;
 			
                                                case 9:
-            sendFrame126("Congratulations, you just advanced a fletching level!", 6232);
-            sendFrame126("Your fletching level is now "+getLevelForXP(c.playerXP[skill])+".", 6233);
-            c.sendMessage("Congratulations, you just advanced a fletching level.");
+            sendFrame126("Congratulations, you just advanced a Fletching level!", 6232);
+            sendFrame126("Your Fletching level is now "+getLevelForXP(c.playerXP[skill])+".", 6233);
+            c.sendMessage("Congratulations, you just advanced a Fletching level.");
 			sendFrame164(6231);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9784,1);
             c.getItems().addItem(9785,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2190,11 +2190,11 @@ public class PlayerAssistant{
             break;
 			
 			case 10:
-            sendFrame126("Congratulations, you just advanced a fishing level!", 6259);
-            sendFrame126("Your fishing level is now "+getLevelForXP(c.playerXP[skill])+".", 6260);
-            c.sendMessage("Congratulations, you just advanced a fishing level.");
+            sendFrame126("Congratulations, you just advanced a Fishing level!", 6259);
+            sendFrame126("Your Fishing level is now "+getLevelForXP(c.playerXP[skill])+".", 6260);
+            c.sendMessage("Congratulations, you just advanced a Fishing level.");
 			sendFrame164(6258);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9799,1);
 			c.getItems().addItem(9800,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2207,28 +2207,28 @@ public class PlayerAssistant{
 			break;
 			
 			case 11:
-			sendFrame126("Congratulations, you just advanced a fire making level!", 4283);
-			sendFrame126("Your firemaking level is now "+getLevelForXP(c.playerXP[skill])+".", 4284);
-			c.sendMessage("Congratulations, you just advanced a fire making level.");
+			sendFrame126("Congratulations, you just advanced a Firemaking level!", 4283);
+			sendFrame126("Your Firemaking level is now "+getLevelForXP(c.playerXP[skill])+".", 4284);
+			c.sendMessage("Congratulations, you just advanced a Firemaking level.");
 			sendFrame164(4282);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9805,1);
 			c.getItems().addItem(9806,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
 					if (Server.playerHandler.players[j] != null) {
 						Client c2 = (Client)Server.playerHandler.players[j];
-						c2.sendClan("<shad=40960>[SERVER]", c.playerName+" just advanced to "+getLevelForXP(c.playerXP[skill])+" Fire Making!", "Global Chat", 2);
+						c2.sendClan("<shad=40960>[SERVER]", c.playerName+" just advanced to "+getLevelForXP(c.playerXP[skill])+" Firemaking!", "Global Chat", 2);
 					}
 				}
 			}
             break;
 			
                                                 case 12:
-			sendFrame126("Congratulations, you just advanced a crafting level!", 6264);
-			sendFrame126("Your crafting level is now "+getLevelForXP(c.playerXP[skill])+".", 6265);
-			c.sendMessage("Congratulations, you just advanced a crafting level.");
+			sendFrame126("Congratulations, you just advanced a Crafting level!", 6264);
+			sendFrame126("Your Crafting level is now "+getLevelForXP(c.playerXP[skill])+".", 6265);
+			c.sendMessage("Congratulations, you just advanced a Crafting level.");
 			sendFrame164(6263);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9805,1);
 			c.getItems().addItem(9806,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2241,11 +2241,11 @@ public class PlayerAssistant{
             break;
 			
 			case 13:
-			sendFrame126("Congratulations, you just advanced a smithing level!", 6222);
-			sendFrame126("Your smithing level is now "+getLevelForXP(c.playerXP[skill])+".", 6223);
-			c.sendMessage("Congratulations, you just advanced a smithing level.");
+			sendFrame126("Congratulations, you just advanced a Smithing level!", 6222);
+			sendFrame126("Your Smithing level is now "+getLevelForXP(c.playerXP[skill])+".", 6223);
+			c.sendMessage("Congratulations, you just advanced a Smithing level.");
 			sendFrame164(6221);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9796,1);
             c.getItems().addItem(9797,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2258,11 +2258,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 14:
-			sendFrame126("Congratulations, you just advanced a mining level!", 4417);
-			sendFrame126("Your mining level is now "+getLevelForXP(c.playerXP[skill])+".", 4438);
-			c.sendMessage("Congratulations, you just advanced a mining level.");
+			sendFrame126("Congratulations, you just advanced a Mining level!", 4417);
+			sendFrame126("Your Mining level is now "+getLevelForXP(c.playerXP[skill])+".", 4438);
+			c.sendMessage("Congratulations, you just advanced a Mining level.");
 			sendFrame164(4416);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9793,1);
             c.getItems().addItem(9794,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2275,11 +2275,11 @@ public class PlayerAssistant{
             break;
 			
 			case 15:
-            sendFrame126("Congratulations, you just advanced a herblore level!", 6238);
-            sendFrame126("Your herblore level is now "+getLevelForXP(c.playerXP[skill])+".", 6239);
-            c.sendMessage("Congratulations, you just advanced a herblore level.");
+            sendFrame126("Congratulations, you just advanced a Herblore level!", 6238);
+            sendFrame126("Your Herblore level is now "+getLevelForXP(c.playerXP[skill])+".", 6239);
+            c.sendMessage("Congratulations, you just advanced a Herblore level.");
 			sendFrame164(6237);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9775,1);
             c.getItems().addItem(9776,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2292,11 +2292,11 @@ public class PlayerAssistant{
             break;
 			
 			case 16:
-			sendFrame126("Congratulations, you just advanced a agility level!", 4278);
-			sendFrame126("Your agility level is now "+getLevelForXP(c.playerXP[skill])+".", 4279);
-			c.sendMessage("Congratulations, you just advanced an agility level.");
+			sendFrame126("Congratulations, you just advanced an Agility level!", 4278);
+			sendFrame126("Your Agility level is now "+getLevelForXP(c.playerXP[skill])+".", 4279);
+			c.sendMessage("Congratulations, you just advanced an Agility level.");
 			sendFrame164(4277);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9772,1);
             c.getItems().addItem(9773,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2309,11 +2309,11 @@ public class PlayerAssistant{
             break;
 			
 			case 17:
-			sendFrame126("Congratulations, you just advanced a thieving level!", 4263);
-			sendFrame126("Your theiving level is now "+getLevelForXP(c.playerXP[skill])+".", 4264);
-            c.sendMessage("Congratulations, you just advanced a thieving level.");
+			sendFrame126("Congratulations, you just advanced a Thieving level!", 4263);
+			sendFrame126("Your Theiving level is now "+getLevelForXP(c.playerXP[skill])+".", 4264);
+            c.sendMessage("Congratulations, you just advanced a Thieving level.");
 			sendFrame164(4261);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9778,1);
             c.getItems().addItem(9779,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2326,11 +2326,11 @@ public class PlayerAssistant{
 			break;
 			
 			case 18:
-			sendFrame126("Congratulations, you just advanced a slayer level!", 12123);
-			sendFrame126("Your slayer level is now "+getLevelForXP(c.playerXP[skill])+".", 12124);
-			c.sendMessage("Congratulations, you just advanced a slayer level.");
+			sendFrame126("Congratulations, you just advanced a Slayer level!", 12123);
+			sendFrame126("Your Slayer level is now "+getLevelForXP(c.playerXP[skill])+".", 12124);
+			c.sendMessage("Congratulations, you just advanced a Slayer level.");
 			sendFrame164(12122);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9787,1);
             c.getItems().addItem(9788,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
@@ -2342,11 +2342,11 @@ public class PlayerAssistant{
 			}
             break;
                                                 case 19:
-			sendFrame126("Congratulations, you just advanced a farming level!", 12123);
-			sendFrame126("Your farming level is now "+getLevelForXP(c.playerXP[skill])+".", 12124);
-			c.sendMessage("Congratulations, you just advanced a farming level.");
+			sendFrame126("Congratulations, you just advanced a Farming level!", 12123);
+			sendFrame126("Your Farming level is now "+getLevelForXP(c.playerXP[skill])+".", 12124);
+			c.sendMessage("Congratulations, you just advanced a Farming level.");
 			sendFrame164(12122);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {
 					if (Server.playerHandler.players[j] != null) {
 						Client c2 = (Client)Server.playerHandler.players[j];
@@ -2357,11 +2357,11 @@ public class PlayerAssistant{
             break;
 
                                                 case 20:
-			sendFrame126("Congratulations, you just advanced a runecrafting level!", 4268);
-			sendFrame126("Your runecrafting level is now "+getLevelForXP(c.playerXP[skill])+".", 4269);
-			c.sendMessage("Congratulations, you just advanced a runecrafting level.");
+			sendFrame126("Congratulations, you just advanced a Runecrafting level!", 4268);
+			sendFrame126("Your Runecrafting level is now "+getLevelForXP(c.playerXP[skill])+".", 4269);
+			c.sendMessage("Congratulations, you just advanced a Runecrafting level.");
 			sendFrame164(4267);
-			if(getLevelForXP(c.playerXP[skill]) == 99) {
+			if(getLevelForXP(c.playerXP[skill]) >= 90) {
 			c.getItems().addItem(9766,1);
             c.getItems().addItem(9767,1);
 				for (int j = 0; j < Server.playerHandler.players.length; j++) {

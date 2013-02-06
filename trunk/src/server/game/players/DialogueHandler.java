@@ -120,7 +120,7 @@ public class DialogueHandler {
 			c.nextChat = 0;
 			break;
 		case 62:
-			sendStatement("This is your first time playing, welcome to Project 06!");
+			sendStatement("This is your first time playing, welcome to ET06!");
 			c.nextChat = 0;
 			break;
 		case 63:

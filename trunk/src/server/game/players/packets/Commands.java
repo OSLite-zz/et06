@@ -20,7 +20,7 @@ public boolean resetAnim = false;
         }
         if (c.playerRights >= 0) {
             if (playerCommand.equalsIgnoreCase("home") || playerCommand.equalsIgnoreCase("stuck")) {
-                c.getPA().spellTeleport(Config.LUMBY_X, Config.LUMBY_Y, 0);
+                c.getPA().movePlayer(Config.LUMBY_X, Config.LUMBY_Y, 0);
             }
         	if (playerCommand.equalsIgnoreCase("players")) {
                 c.sendMessage("Current amount of players online: @red@" + PlayerHandler.getPlayerCount() + "@bla@.");
@@ -52,7 +52,7 @@ public boolean resetAnim = false;
     						}
     						else if (c.playerRights == 3) {
     							Client c2 = (Client)Server.playerHandler.players[j];
-    							c2.sendMessage("[ADMIN] @dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
+    							c2.sendMessage("[OWNER] @dbl@" + Misc.capitalize(c.playerName) +": " + Misc.optimizeText(playerCommand.substring(5)) +"");
     						} else {
                                 c.sendMessage("You do not have permission to do that.");
                             }
@@ -445,8 +445,9 @@ public boolean resetAnim = false;
                     c.playerXP[skill] = c.getPA().getXPForLevel(99) + 5;
                     c.playerLevel[skill] = c.getPA().getLevelForXP(c.playerXP[skill]);
                     c.getPA().refreshSkill(skill);
+                    skill++;
                 }
-                c.sendMessage("::master command has run correctly");
+                c.sendMessage("::master command has run successfully");
             }
             
             if (playerCommand.startsWith("slave")) {
@@ -461,8 +462,9 @@ public boolean resetAnim = false;
                         c.playerLevel[skill] = c.getPA().getLevelForXP(c.playerXP[skill]);
                         c.getPA().refreshSkill(skill);
                     }
+                    skill++;
                 }
-                c.sendMessage("::slave command has run correctly");
+                c.sendMessage("::slave command has run successfully");
             }
         }
 	}

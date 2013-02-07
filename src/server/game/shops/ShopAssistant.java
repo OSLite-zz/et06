@@ -23,7 +23,7 @@ public class ShopAssistant {
 	*Shops
 	**/
 	
-	public void openShop(int ShopID){		
+	public void openShop(int ShopID){
 		c.getItems().resetItems(3823);
 		resetShop(ShopID);
 		c.isShopping = true;
@@ -43,7 +43,7 @@ public class ShopAssistant {
 	}
 	
 	public boolean shopSellsItem(int itemID) {
-		for (int i = 0; i < Server.shopHandler.ShopItems.length; i++) {
+		for (int i = 0; i < Server.shopHandler.ShopItems[c.myShopId].length; i++) {
 			if(itemID == (Server.shopHandler.ShopItems[c.myShopId][i] - 1)) {
 				return true;
 			}
@@ -71,7 +71,7 @@ public class ShopAssistant {
 			c.getOutStream().writeWord(3900);
 			c.getOutStream().writeWord(TotalItems);
 			int TotalCount = 0;
-			for (int i = 0; i < Server.shopHandler.ShopItems.length; i++) {
+			for (int i = 0; i < Server.shopHandler.ShopItems[ShopID].length; i++) {
 				if (Server.shopHandler.ShopItems[ShopID][i] > 0 || i <= Server.shopHandler.ShopItemsStandard[ShopID]) {
 					if (Server.shopHandler.ShopItemsN[ShopID][i] > 254) {
 						c.getOutStream().writeByte(255); 					
@@ -311,14 +311,14 @@ public class ShopAssistant {
 		if (Item.itemIsNote[itemID] == true) {
 			itemID = c.getItems().getUnnotedItem(itemID);
 		}
-		for (int i = 0; i < Server.shopHandler.ShopItems.length; i++) {
+		for (int i = 0; i < Server.shopHandler.ShopItems[c.myShopId].length; i++) {
 			if ((Server.shopHandler.ShopItems[c.myShopId][i] - 1) == itemID) {
 				Server.shopHandler.ShopItemsN[c.myShopId][i] += amount;
 				Added = true;
 			}
 		}
 		if (Added == false) {
-			for (int i = 0; i < Server.shopHandler.ShopItems.length; i++) {
+			for (int i = 0; i < Server.shopHandler.ShopItems[c.myShopId].length; i++) {
 				if (Server.shopHandler.ShopItems[c.myShopId][i] == 0) {
 					Server.shopHandler.ShopItems[c.myShopId][i] = (itemID + 1);
 					Server.shopHandler.ShopItemsN[c.myShopId][i] = amount;

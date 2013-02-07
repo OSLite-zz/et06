@@ -1694,8 +1694,8 @@ public class SkillInterfaces {
 			menuLine("1", "Bronze Pickaxe", 1265, 0);
 			menuLine("1", "Iron Pickaxe", 1267, 1);
 			menuLine("6", "Steel Pickaxe", 1269, 2);
-			menuLine("21", "Mithril Pickaxe", 1271, 3);
-			menuLine("31", "Adamant Pickaxe", 1273, 4);
+			menuLine("21", "Mithril Pickaxe", 1273, 3);
+			menuLine("31", "Adamant Pickaxe", 1271, 4);
 			menuLine("41", "Rune Pickaxe", 1275, 5);
 			optionTab("Mining", "Pickaxes", "Ores", "Pickaxes", "Milestones",
 					"", "", "", "", "", "", "", "", "", "");

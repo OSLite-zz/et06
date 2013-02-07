@@ -21,6 +21,9 @@ public class ActionHandler {
 	
 	public void firstClickObject(int objectType, int obX, int obY) {
 		c.clickObjectType = 0;
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: FIRST CLICK OBJECT "+objectType);
+		}
 		if (Woodcutting.playerTrees(c, objectType)) {
             if (Config.WOODCUTTING_DEBUG) {
                 c.sendMessage("good, this went through.");
@@ -379,8 +382,8 @@ public class ActionHandler {
 				case 2452:
 		
 		///SHOPS - By Ambient
-        	case 520:	// 
-				c.getShops().openShop(1);	// Lumberidge General Store
+		case 521:   //
+                c.getShops().openShop(1);	// Lumberidge General Store
 								
 		case 550:	// LOWE
 				c.getShops().openShop(3);	// Lowe's Archery Emporium
@@ -395,7 +398,7 @@ public class ActionHandler {
 				c.getShops().openShop(6);	// Thessalia's Rare's
 				
 		case 530:	// 
-				c.getShops().openShop(7);	// Sword Suplies
+				c.getShops().openShop(7);	// Sword Supplies
 				
 		case 553:	// AUBURY
 				c.getShops().openShop(8);	// Aubury's Rune Shop
@@ -955,6 +958,9 @@ public class ActionHandler {
 	}
 	
 	public void secondClickObject(int objectType, int obX, int obY) {
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: SECOND CLICK OBJECT "+objectType);
+		}
 		c.clickObjectType = 0;
 		switch(objectType) {
 		case 11666:
@@ -1060,7 +1066,9 @@ public class ActionHandler {
 	
 	public void thirdClickObject(int objectType, int obX, int obY) {
 		c.clickObjectType = 0;
-		c.sendMessage("Object type: " + objectType);
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: THIRD CLICK OBJECT "+objectType);
+		}
 		switch(objectType) {
 		//In here
 		default:
@@ -1073,6 +1081,9 @@ public class ActionHandler {
 		c.clickNpcType = 0;
 		c.npcClickIndex = 0;
 		c.fishitem = -1;
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: FIRST CLICK NPC "+npcType);
+		}
 		if (c.fishitem != -1) {
             if (!c.getItems().playerHasItem(c.fishitem)) {
                 c.sendMessage("You need a " + c.getItems().getItemName(c.fishitem) + " to fish for " + c.getItems().getItemName(c.fishies));
@@ -1281,7 +1292,7 @@ public class ActionHandler {
 				c.getDH().sendDialogues(997, npcType);
 			break;
 			case 530:
-				c.getDH().sendDialogues(996, npcType);
+				c.getDH().sendDialogues(999, npcType);
 			break;
 		default:
 		//c.getDH().sendDialogues(144, npcType);
@@ -1296,6 +1307,9 @@ public class ActionHandler {
 	public void secondClickNpc(int npcType) {
 		c.fishitem = -1;
 		c.clickNpcType = 0;
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: SECOND CLICK NPC "+npcType);
+		}
 		c.npcClickIndex = 0;
 		if (c.fishitem != -1) {
                     if (!c.getItems().playerHasItem(c.fishitem)) {
@@ -1485,6 +1499,9 @@ public class ActionHandler {
 	}
 	
 	public void thirdClickNpc(int npcType) {
+		if (Config.CLICK_OBJECT_DEBUG) {
+			Misc.println("DEBUG: THIRD CLICK NPC "+npcType);
+		}
 		c.clickNpcType = 0;
 		c.npcClickIndex = 0;
 		switch(npcType) {

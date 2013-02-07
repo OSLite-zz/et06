@@ -358,6 +358,10 @@ public class ItemHandler {
 				token2_2 = token2_2.replaceAll("\t\t", "\t");
 				token2_2 = token2_2.replaceAll("\t\t", "\t");
 				token2_2 = token2_2.replaceAll("\t\t", "\t");
+                token2_2 = token2_2.replaceAll("\t\t", "\t");
+                token2_2 = token2_2.replaceAll("\t\t", "\t");
+                token2_2 = token2_2.replaceAll("\t\t", "\t");
+                token2_2 = token2_2.replaceAll("\t\t", "\t");
 				token3 = token2_2.split("\t");
 				if (token.equals("item")) {
 					int[] Bonuses = new int[12];

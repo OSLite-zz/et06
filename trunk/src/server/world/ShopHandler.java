@@ -46,7 +46,7 @@ public class ShopHandler {
 	}
 
 	public static void shophandler() {
-	Misc.println("Shop Handler class successfully loaded");
+		Misc.println("Shop Handler class successfully loaded");
 	}
 	
 	public void process() {

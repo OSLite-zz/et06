@@ -37,22 +37,37 @@ def npcClick2_546(c, npcId):
 def npcClick2_548(c, npcId):
 	c.getShops().openShop(6)
 
-def npcClick2_549(c, npcId):
+def npcClick2_549(c, npcId):#horvik
 	c.getShops().openShop(4)
 
-def npcClick2_550(c, npcId):
+def npcClick2_550(c, npcId):#lowe
 	c.getShops().openShop(3)
 
-def npcClick2_553(c, npcId):
+def npcClick2_553(c, npcId):#aubury
 	c.getShops().openShop(8)
 
-def npcClick2_563(c, npcId):
+def npcClick2_563(c, npcId):#arhein
 	c.getShops().openShop(1)
 
-def npcClick2_575(c, npcId):
+def npcClick2_569(c, npcId):#silver merchant
+	c.getShops().openShop(1)
+	
+def npcClick2_570(c, npcId):#ardougne gem merchant
+	c.getShops().openShop(105)
+
+def npcClick2_571(c, npcId):#baker
+	c.getShops().openShop(1)
+	
+def npcClick2_572(c, npcId):#spice seller
+	c.getShops().openShop(1)
+	
+def npcClick2_573(c, npcId):#fur trader
+	c.getShops().openShop(1)
+	
+def npcClick2_575(c, npcId):#hickton
 	c.getShops().openShop(39)
 
-def npcClick2_576(c, npcId):
+def npcClick2_576(c, npcId):#harry
 	c.getShops().openShop(38)
 
 def npcClick2_577(c, npcId):

@@ -28,7 +28,8 @@ public class ActionHandler {
             if (Config.WOODCUTTING_DEBUG) {
                 c.sendMessage("good, this went through.");
             }
-			Woodcutting.attemptData(c, objectType, obX, obY);
+			ScriptManager.callFunc("objectAction1_"+objectType, c, obX, obY);
+			//Woodcutting.attemptData(c, objectType, obX, obY);
 			return;
 		}
 		if (Mining.miningRocks(c, objectType)) {
@@ -1330,27 +1331,6 @@ public class ActionHandler {
                     c.fishtimer = c.getFishing().fishtime(c.fishies, c.fishreqt);
                 }
 		switch(npcType) {
-		case 209:
-			c.getShops().openShop(22);
-			break;
-		case 1917:
-			c.getShops().openShop(21);
-			break;
-		case 2620:
-			c.getShops().openShop(20);
-			break;
-		case 2622:
-			c.getShops().openShop(19);
-			break;
-		case 559:
-			c.getShops().openShop(16);
-			break;
-		case 545:
-			c.getShops().openShop(13);
-			break;
-		case 1658:
-			c.getShops().openShop(14);
-			break;
 		case 333:
             c.fishing = true;
             c.fishXP = 100 * Config.FISHING_EXPERIENCE;
@@ -1443,42 +1423,6 @@ public class ActionHandler {
 			case 26:
 			case 21:
 				c.getThieving().stealFromNPC(npcType);
-			break;
-			/* - - Shops - - */
-			/* General Store / Assistant Varrock */
-			case 520: case 521:
-			c.getShops().openShop(1);
-			break;
-			/* Thessalia Varrock */
-			case 548:
-			c.getShops().openShop(2);
-			break;
-			/* Zaff Varrock */
-			case 546:
-			c.getShops().openShop(3);
-			break;
-			/* Swordshop Varrock */
-			case 561:
-			c.getShops().openShop(4);
-			break;
-			/* Tea Shop */
-			case 595:
-			c.getShops().openShop(5);
-			break;
-			/* Aubury's Rune Store */
-			case 553:
-			c.getShops().openShop(6);
-			break;
-			/* Lowe's Archery Emporium */
-			case 550:
-			c.getShops().openShop(7);
-			break;
-			/* Horvik's Armour Shop */
-			case 549:
-			c.getShops().openShop(8);
-			break;
-			case 3788:
-			//c.getShops().openVoid();
 			break;
 			case 494: 
 			case 495: 

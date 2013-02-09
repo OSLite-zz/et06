@@ -10,7 +10,7 @@ public class Config {
 	public static final boolean CLICK_OBJECT_DEBUG = true;
 	
 	public static final String SERVER_NAME = "ET06";
-	public static final String WELCOME_MESSAGE = "Welcome to ET06, nigga!";
+	public static final String WELCOME_MESSAGE = "Welcome to ET06!";
 	public static final String FORUMS = "Unavailable";
 	
 	public static final int CLIENT_VERSION = 1;

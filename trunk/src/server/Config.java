@@ -299,7 +299,11 @@ public class Config {
 	public static final int COOKING_EXPERIENCE = 1;
 	public static final int FLETCHING_EXPERIENCE = 1;	
 	public static final int MELEE_EXP_RATE = 1;
+	public static final int ATTACK_EXP_RATE = 1;
+	public static final int DEFENCE_EXP_RATE = 1;
+	public static final int STRENGTH_EXP_RATE = 1;
 	public static final int RANGE_EXP_RATE = 1;
 	public static final int MAGIC_EXP_RATE = 1;
+	public static final int HITPOINTS_EXP_RATE = 1;
 	public static final int SERVER_EXP_BONUS = 100;
 }

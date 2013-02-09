@@ -105,25 +105,25 @@ def objectAction1_1306(player, objX, objY):
 # AXE CHECK
 def doAxeCheck(player, name, objID, objX, objY):
 	level = player.playerLevel[8]
-	if player.withinInteractionDistance(objX, objY):
-		if player.freeSlots() > 0:
-			if player.hasItem(6739) and level >= 61:
-				doCut(player, name, objID, objX, objY)
-			elif player.hasItem(1359) and level >= 41:
-				doCut(player, name, objID, objX, objY)
-			elif player.hasItem(1357) and level >= 31:
-				doCut(player, name, objID, objX, objY)
-			elif player.hasItem(1355) and level >= 21:
-				doCut(player, name, objID, objX, objY)
-			elif player.hasItem(1353) and level >= 6 or player.hasItem(1361) and level >= 6:
-				doCut(player, name, objID, objX, objY)
-			elif player.hasItem(1351) or player.hasItem(1349):
-				doCut(player, name, objID, objX, objY)
-			else:
-				player.sendMessage("You do not have an axe of which you have the level to use.")
-		elif player.freeSlots() == 0:
-			player.resetAnimation()
-			player.sendMessage("Your inventory is full!")
+	#if player.goodDistance(objX, objY, player.getX(), player.getY(), getDistance(name)):
+	if player.freeSlots() > 0:
+		if player.getItems().playerHasItemhasItem(6739) and level >= 61:
+			doCut(player, name, objID, objX, objY)
+		elif player.getItems().playerHasItemhasItemhasItem(1359) and level >= 41:
+			doCut(player, name, objID, objX, objY)
+		elif player.getItems().playerHasItemhasItemhasItem(1357) and level >= 31:
+			doCut(player, name, objID, objX, objY)
+		elif player.getItems().playerHasItemhasItemhasItem(1355) and level >= 21:
+			doCut(player, name, objID, objX, objY)
+		elif player.getItems().playerHasItemhasItemhasItem(1353) and level >= 6 or player.getItems().playerHasItemhasItem(1361) and level >= 6:
+			doCut(player, name, objID, objX, objY)
+		elif player.getItems().playerHasItemhasItemhasItem(1351) or player.getItems().playerHasItem(1349):
+			doCut(player, name, objID, objX, objY)
+		else:
+			player.sendMessage("You do not have an axe of which you have the level to use.")
+	elif player.freeSlots() == 0:
+		player.resetAnimation()
+		player.sendMessage("Your inventory is full!")
 
 # SKILL EXECUTION
 def doCut(player, name, objID, x, y):
@@ -165,16 +165,16 @@ def doCut(player, name, objID, x, y):
 # SKILL CALLBACK FUNCTIONS
 def callback_woodcutting_TREE(player, id, x, y):
 	player.sendMessage("You get some logs.")
-	player.addItem(1511, 1)
-	player.addSkillXP(25, 8)
+	player.getItems().addItem(1511, 1)
+	player.getPA().addSkillXP(25, 8)
 	player.resetAnimation()
 	PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
 	TaskManager.registerClientTask(TaskFactory.getDelayedGlobalTask("callback_woodcutting_replace", id, x, y), 3)
 
 def callback_woodcutting_OAK(player, id, x, y):
 	player.sendMessage("You get some oak logs.")
-	player.addItem(1521, 1)
-	player.addSkillXP(37.5, 8)
+	player.getItems().addItem(1521, 1)
+	player.getPA().addSkillXP(37.5, 8)
 	if Misc.random(4) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -184,8 +184,8 @@ def callback_woodcutting_OAK(player, id, x, y):
 
 def callback_woodcutting_WILLOW(player, id, x, y):
 	player.sendMessage("You get some willow logs.")
-	player.addItem(1519, 1)
-	player.addSkillXP(67.5, 8)
+	player.getItems().addItem(1519, 1)
+	player.getPA().addSkillXP(67.5, 8)
 	if Misc.random(6) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -195,8 +195,8 @@ def callback_woodcutting_WILLOW(player, id, x, y):
 
 def callback_woodcutting_YEW(player, id, x, y):
 	player.sendMessage("You get some yew logs.")
-	player.addItem(1515, 1)
-	player.addSkillXP(175, 8)
+	player.getItems().addItem(1515, 1)
+	player.getPA().addSkillXP(175, 8)
 	if Misc.random(7) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -206,8 +206,8 @@ def callback_woodcutting_YEW(player, id, x, y):
         
 def callback_woodcutting_MAGIC(player, id, x, y):
 	player.sendMessage("You get some magic logs.")
-	player.addItem(1513, 1)
-	player.addSkillXP(250, 8)
+	player.getItems().addItem(1513, 1)
+	player.getPA().addSkillXP(250, 8)
 	if Misc.random(8) == 1:
 		player.resetAnimation()
 		PlayerManager.replaceObjectGlobal(x, y, 1341, 0, 10)
@@ -218,3 +218,6 @@ def callback_woodcutting_MAGIC(player, id, x, y):
 # OBJECT RESPAWN
 def callback_woodcutting_replace(id, x, y):
 	PlayerManager.replaceObjectGlobal(x, y, id, 0, 10)
+	
+
+	

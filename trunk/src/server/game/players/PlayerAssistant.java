@@ -2769,6 +2769,71 @@ public class PlayerAssistant{
 			return false;
 		}
 		amount *= Config.SERVER_EXP_BONUS;
+		switch (skill) {
+			case 0:
+				amount *= Config.ATTACK_EXP_RATE;
+				break;
+			case 1:
+				amount *= Config.DEFENCE_EXP_RATE;
+				break;
+			case 2:
+				amount *= Config.STRENGTH_EXP_RATE;
+				break;
+			case 3:
+				amount *= Config.HITPOINTS_EXP_RATE;
+				break;
+			case 4:
+				amount *= Config.RANGE_EXP_RATE;
+				break;
+			case 5:
+				amount *= Config.PRAYER_EXPERIENCE;
+				break;
+			case 6:
+				amount *= Config.MAGIC_EXP_RATE;
+				break;
+			case 7:
+				amount *= Config.COOKING_EXPERIENCE;
+				break;
+			case 8:
+				amount *= Config.WOODCUTTING_EXPERIENCE;
+				break;
+			case 9:
+				amount *= Config.FLETCHING_EXPERIENCE;
+				break;
+			case 10:
+				amount *= Config.FISHING_EXPERIENCE;
+				break;
+			case 11:
+				amount *= Config.FIREMAKING_EXPERIENCE;
+				break;
+			case 12:
+				amount *= Config.CRAFTING_EXPERIENCE;
+				break;
+			case 13:
+				amount *= Config.SMITHING_EXPERIENCE;
+				break;
+			case 14:
+				amount *= Config.MINING_EXPERIENCE;
+				break;
+			case 15:
+				amount *= Config.HERBLORE_EXPERIENCE;
+				break;
+			case 16:
+				amount *= Config.AGILITY_EXPERIENCE;
+				break;
+			case 17:
+				amount *= Config.THIEVING_EXPERIENCE;
+				break;
+			case 18:
+				amount *= Config.SLAYER_EXPERIENCE;
+				break;
+			case 19:
+				amount *= Config.FARMING_EXPERIENCE;
+				break;
+			case 20:
+				amount *= Config.RUNECRAFTING_EXPERIENCE;
+				break;
+		}
 		int oldLevel = getLevelForXP(c.playerXP[skill]);
 		c.playerXP[skill] += amount;
 		if (oldLevel < getLevelForXP(c.playerXP[skill])) {

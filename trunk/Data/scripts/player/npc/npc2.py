@@ -49,20 +49,20 @@ def npcClick2_553(c, npcId):#aubury
 def npcClick2_563(c, npcId):#arhein
 	c.getShops().openShop(1)
 
-def npcClick2_569(c, npcId):#silver merchant
-	c.getShops().openShop(1)
+def npcClick2_569(c, npcId):#ardougne silver stall
+	c.getShops().openShop(114)
 	
-def npcClick2_570(c, npcId):#ardougne gem merchant
+def npcClick2_570(c, npcId):#ardougne gem stall
 	c.getShops().openShop(105)
 
-def npcClick2_571(c, npcId):#baker
-	c.getShops().openShop(1)
+def npcClick2_571(c, npcId):#ardougne baker stall
+	c.getShops().openShop(113)
 	
-def npcClick2_572(c, npcId):#spice seller
-	c.getShops().openShop(1)
+def npcClick2_572(c, npcId):#ardougne spice stall
+	c.getShops().openShop(112)
 	
-def npcClick2_573(c, npcId):#fur trader
-	c.getShops().openShop(1)
+def npcClick2_573(c, npcId):#ardougne fur stall
+	c.getShops().openShop(115)
 	
 def npcClick2_575(c, npcId):#hickton
 	c.getShops().openShop(39)
@@ -87,6 +87,24 @@ def npcClick2_595(c, npcId):
 
 def npcClick2_836(c, npcId):
 	c.getShops().openShop(25)
+
+def npcClick2_1282(c, npcId):#sigmund the merchant
+	c.getShops().openShop(108)
+	
+def npcClick2_1300(c, npcId):#thora the barkeeper
+	c.getShops().openShop(110)
+
+def npcClick2_1301(c, npcId):#yrsa
+	c.getShops().openShop(109)
+	
+def npcClick2_1303(c, npcId):#skulgrimen
+	c.getShops().openShop(106)
+
+def npcClick2_1315(c, npcId):#fish monger relleka
+	c.getShops().openShop(111)
+
+def npcClick2_1316(c, npcId):#fur trader relleka
+	c.getShops().openShop(107)
 
 def npcClick2_2305(c, npcId):
 	c.getShops().openShop(104)

@@ -419,9 +419,9 @@ public boolean resetAnim = false;
                 c.startAnimation(Integer.parseInt(args[1]));
                 c.getPA().requestUpdates();
            }
-	   if (playerCommand.equals("bank")) {
+	   /*if (playerCommand.equals("bank")) { //BROKEN
             c.getPA().openUpBank();
-            }
+            }*/
            if (playerCommand.startsWith("setlevel")) {
                 try {
                     String[] args = playerCommand.split(" ");

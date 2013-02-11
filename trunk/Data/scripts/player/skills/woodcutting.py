@@ -105,25 +105,25 @@ def objectAction1_1306(player, objX, objY):
 # AXE CHECK
 def doAxeCheck(player, name, objID, objX, objY):
 	level = player.playerLevel[8]
-	#if player.goodDistance(objX, objY, player.getX(), player.getY(), getDistance(name)):
-	if player.freeSlots() > 0:
-		if player.getItems().playerHasItemhasItem(6739) and level >= 61:
-			doCut(player, name, objID, objX, objY)
-		elif player.getItems().playerHasItemhasItemhasItem(1359) and level >= 41:
-			doCut(player, name, objID, objX, objY)
-		elif player.getItems().playerHasItemhasItemhasItem(1357) and level >= 31:
-			doCut(player, name, objID, objX, objY)
-		elif player.getItems().playerHasItemhasItemhasItem(1355) and level >= 21:
-			doCut(player, name, objID, objX, objY)
-		elif player.getItems().playerHasItemhasItemhasItem(1353) and level >= 6 or player.getItems().playerHasItemhasItem(1361) and level >= 6:
-			doCut(player, name, objID, objX, objY)
-		elif player.getItems().playerHasItemhasItemhasItem(1351) or player.getItems().playerHasItem(1349):
-			doCut(player, name, objID, objX, objY)
-		else:
-			player.sendMessage("You do not have an axe of which you have the level to use.")
-	elif player.freeSlots() == 0:
-		player.resetAnimation()
-		player.sendMessage("Your inventory is full!")
+	if player.distanceToPoint(objX, objY) <= getDistance(name):
+		if player.freeSlots() > 0:
+			if player.getItems().playerHasItem(6739) and level >= 61:
+				doCut(player, name, objID, objX, objY)
+			elif player.getItems().playerHasItem(1359) and level >= 41:
+				doCut(player, name, objID, objX, objY)
+			elif player.getItems().playerHasItem(1357) and level >= 31:
+				doCut(player, name, objID, objX, objY)
+			elif player.getItems().playerHasItem(1355) and level >= 21:
+				doCut(player, name, objID, objX, objY)
+			elif player.getItems().playerHasItem(1353) and level >= 6 or player.getItems().playerHasItem(1361) and level >= 6:
+				doCut(player, name, objID, objX, objY)
+			elif player.getItems().playerHasItem(1351) or player.getItems().playerHasItem(1349):
+				doCut(player, name, objID, objX, objY)
+			else:
+				player.sendMessage("You do not have an axe of which you have the level to use.")
+		elif player.freeSlots() == 0:
+			player.resetAnimation()
+			player.sendMessage("Your inventory is full!")
 
 # SKILL EXECUTION
 def doCut(player, name, objID, x, y):

@@ -57,6 +57,9 @@ public class ClickObject implements PacketType {
 				case 1733:
 					c.objectYOffset = 2;
 				break;
+				case 1734:
+					c.objectXOffset = 2;
+				break;
 				
 				case 3044:
 					c.objectDistance = 3;

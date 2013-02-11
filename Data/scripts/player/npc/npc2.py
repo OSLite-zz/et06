@@ -112,6 +112,9 @@ def npcClick2_588(c, npcId):#davon
 def npcClick2_595(c, npcId):
 	c.getShops().openShop(101)
 
+def npcClick2_793(c, npcId):#alfonse the waiter
+	c.getShops().openShop(118)
+
 def npcClick2_836(c, npcId):
 	c.getShops().openShop(25)
 

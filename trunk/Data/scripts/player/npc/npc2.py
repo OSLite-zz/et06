@@ -46,6 +46,15 @@ def npcClick2_550(c, npcId):#lowe
 def npcClick2_553(c, npcId):#aubury
 	c.getShops().openShop(8)
 
+def npcClick2_557(c, npcId):#wydin
+	c.getShops().openShop(27)
+
+def npcClick2_558(c, npcId):#gerrant
+	c.getShops().openShop(28)
+
+def npcClick2_559(c, npcId):#brian
+	c.getShops().openShop(31)
+
 def npcClick2_563(c, npcId):#arhein
 	c.getShops().openShop(1)
 
@@ -81,6 +90,9 @@ def npcClick2_581(c, npcId):
 
 def npcClick2_582(c, npcId):
 	c.getShops().openShop(48)
+
+def npcClick2_583(c, npcId):
+	c.getShops().openShop(30)
 
 def npcClick2_584(c, npcId):
 	c.getShops().openShop(13)

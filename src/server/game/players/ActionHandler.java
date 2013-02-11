@@ -272,11 +272,11 @@ public class ActionHandler {
 		
 
 		case 1733:
-			c.getPA().movePlayer(c.absX, c.absY + 6393, 0);
+			c.getPA().movePlayer(c.absX + 4, c.absY + 6400, 0);
 		break;
 		
 		case 1734:
-			c.getPA().movePlayer(c.absX, c.absY - 6396, 0);
+			c.getPA().movePlayer(c.absX - 4, c.absY - 6400, 0);
 		break;
 		
 		case 9357:

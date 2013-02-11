@@ -72,6 +72,9 @@ def npcClick2_576(c, npcId):#harry
 
 def npcClick2_577(c, npcId):
 	c.getShops().openShop(12)
+	
+def npcClick2_580(c, npcId):#flynn's mace shop
+	c.getShops().openShop(11)
 
 def npcClick2_581(c, npcId):
 	c.getShops().openShop(14)

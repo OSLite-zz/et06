@@ -106,6 +106,9 @@ def npcClick2_583(c, npcId):
 def npcClick2_584(c, npcId):
 	c.getShops().openShop(13)
 
+def npcClick2_588(c, npcId):#davon
+	c.getShops().openShop(34)
+
 def npcClick2_595(c, npcId):
 	c.getShops().openShop(101)
 

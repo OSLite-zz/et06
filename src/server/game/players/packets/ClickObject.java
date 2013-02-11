@@ -71,13 +71,13 @@ public class ClickObject implements PacketType {
 				break;
 				
 				case 272:
-					c.objectYOffset = 1;
-					c.objectDistance = 0;
+					c.objectYOffset = 0;
+					c.objectDistance = 1;
 				break;
 				
 				case 273:
-					c.objectYOffset = 1;
-					c.objectDistance = 0;
+					c.objectYOffset = 0;
+					c.objectDistance = 1;
 				break;
 				
 				case 246:

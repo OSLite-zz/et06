@@ -111,3 +111,6 @@ def npcClick2_1316(c, npcId):#fur trader relleka
 
 def npcClick2_2305(c, npcId):
 	c.getShops().openShop(104)
+	
+def npcClick2_2719(c, npcId):
+	c.getShops().openShop(29)

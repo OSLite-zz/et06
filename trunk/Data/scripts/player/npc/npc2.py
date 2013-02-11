@@ -19,6 +19,12 @@ def npcClick2_527(c, npcId):
 def npcClick2_530(c, npcID):
 	c.getShops().openShop(1)
 
+def npcClick2_532(c, npcID):#karamja shop keeper
+	c.getShops().openShop(32)
+
+def npcClick2_533(c, npcID):#karamja shop assistant
+	c.getShops().openShop(32)
+
 def npcClick2_537(c, npcId):
 	c.getShops().openShop(9)
 
@@ -57,6 +63,9 @@ def npcClick2_559(c, npcId):#brian
 
 def npcClick2_563(c, npcId):#arhein
 	c.getShops().openShop(1)
+
+def npcClick2_568(c, npcId):#zambo
+	c.getShops().openShop(116)
 
 def npcClick2_569(c, npcId):#ardougne silver stall
 	c.getShops().openShop(114)

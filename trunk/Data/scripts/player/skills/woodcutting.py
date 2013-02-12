@@ -4,7 +4,6 @@
 #
 # Stump: 1341(deadtree)
 
-import random
 # ITEM ACTION LISTENERS
 # Normal Trees
 def objectAction1_1276(player, objX, objY):

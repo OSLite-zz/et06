@@ -15,6 +15,7 @@ import server.world.map.VirtualWorld;
 import server.event.EventManager;
 import server.event.Event;
 import server.event.EventContainer;
+import core.util.ScriptManager;
 
 public class NPCHandler {
 	public static int maxNPCs = 10000;

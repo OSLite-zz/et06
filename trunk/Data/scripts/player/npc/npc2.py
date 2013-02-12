@@ -49,6 +49,12 @@ def npcClick2_549(c, npcId):#horvik
 def npcClick2_550(c, npcId):#lowe
 	c.getShops().openShop(3)
 
+def npcClick2_551(c, npcId):#varrock swords shopkeeper
+	c.getShops().openShop(7)
+
+def npcClick2_552(c, npcId):#varrock swords shopassistant
+	c.getShops().openShop(7)
+
 def npcClick2_553(c, npcId):#aubury
 	c.getShops().openShop(8)
 

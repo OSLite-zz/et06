@@ -1389,8 +1389,12 @@ public class NPCHandler {
 	**/
 	
 
-	public void dropItems(int i) {
-		int npc = 0;
+public void dropItems(int i) {
+	NPC npc = npcs[i];
+	Server server = new Server();
+	Client c = (Client)Server.playerHandler.players[npcs[i].killedBy];
+	ScriptManager.callFunc("npcDrop_"+npc.npcType, c, npc, server);
+		/*int npc = 0;
 		Client c = (Client)Server.playerHandler.players[npcs[i].killedBy];
 		if(c != null) {
 			for(int o = 0; o < c.barrowsNpcs.length; o++){
@@ -1411,7 +1415,7 @@ public class NPCHandler {
 					}
 				}
 			}
-		}
+		}*/
 	}
 	
 	public void appendKillCount(int i) {

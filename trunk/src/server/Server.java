@@ -37,8 +37,6 @@ import server.world.ObjectHandler;
 import server.world.ObjectManager;
 import server.world.ShopHandler;
 import server.world.ClanChatHandler;
-
-//trying to get scripts working, might not work, EXPERIMENTAL
 import core.util.ScriptManager;
 
 /**
@@ -81,8 +79,8 @@ public class Server {
 	public static PestControl pestControl = new PestControl();
 	public static ClanChatHandler clanChat = new ClanChatHandler();
 	public static FightCaves fightCaves = new FightCaves();
-    
-    //trying to get scripts working, might not work, EXPERIMENTAL
+
+	
     public static ScriptManager scriptManager = new ScriptManager();
 	
 	static {
@@ -139,12 +137,7 @@ public class Server {
 		Doors.getSingleton().load();
 		DoubleDoors.getSingleton().load();
 		Connection.initialize();
-		HighscoresConfig.loadHighscores();
-        
-        /**
-         * Load Scripts MIGHT NOT WORK EXPERIMENTAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-         */
-         
+		HighscoresConfig.loadHighscores(); 
         ScriptManager.loadScripts();
 		
 		/**

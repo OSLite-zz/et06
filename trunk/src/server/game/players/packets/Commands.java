@@ -7,6 +7,7 @@ import server.game.players.Client;
 import server.game.players.PacketType;
 import server.game.players.PlayerHandler;
 import core.util.Misc;
+import core.util.ScriptManager;
 
 
 public class Commands implements PacketType {
@@ -153,9 +154,8 @@ public boolean resetAnim = false;
 					}
 				}			
 			}
-        	if (playerCommand.equals("test")) {
-        		c.playerWalkIndex = 744;
-        	}
+        	/*if (playerCommand.equals("test")) {
+        	}*/
         	if (playerCommand.equals("resetanim")) {
         		c.playerWalkIndex = 0x333;
         	}

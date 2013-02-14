@@ -136,13 +136,8 @@ def dropItems(player, npc, server, commondrops, uncommondrops, raredrops, veryra
 			drop2 = -1
 	else:
 		drop2 = -1
-	if random.randrange(20) == 0:
-		drop3 = determineDrop("COMMON", commondrops, uncommondrops, raredrops, veryraredrops)
-	else:
-		drop3 = -1
 	server.itemHandler.createGroundItem(player, drop, npc.absX, npc.absY, getAmount(drop, npc.npcType), player.playerId)
 	server.itemHandler.createGroundItem(player, drop2, npc.absX, npc.absY, getAmountRDT(drop2, npc.npcType), player.playerId)
-	server.itemHandler.createGroundItem(player, drop3, npc.absX, npc.absY, getAmount(drop3, npc.npcType), player.playerId)
 	
 #returns amount of items for arrows/runes/etc
 	
@@ -167,7 +162,7 @@ def NPCAlwaysDrops(player, npc, server):
 
 def isNPCOnRDT(npcId):
 	###TODO
-	return 1;
+	return 1
 
 
 

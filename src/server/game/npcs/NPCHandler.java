@@ -1250,7 +1250,7 @@ public class NPCHandler {
 					} else if (npcs[i].actionTimer == 0 && npcs[i].applyDead == true &&  npcs[i].needRespawn == false) {						
 						npcs[i].needRespawn = true;
 						npcs[i].actionTimer = getRespawnTime(i); // respawn time
-						dropItems(i); // npc drops items!
+						dropItems(i); // npc drops items
 						appendSlayerExperience(i);
 						appendKillCount(i);
 						//appendJailKc(i);
@@ -1385,37 +1385,15 @@ public class NPCHandler {
 	
 	
 	/**
-	* Dropping Items!
+	* Dropping Items
 	**/
 	
 
-public void dropItems(int i) {
-	NPC npc = npcs[i];
-	Server server = new Server();
-	Client c = (Client)Server.playerHandler.players[npcs[i].killedBy];
-	ScriptManager.callFunc("npcDrop_"+npc.npcType, c, npc, server);
-		/*int npc = 0;
+	public void dropItems(int i) {
+		NPC npc = npcs[i];
+		Server server = new Server();
 		Client c = (Client)Server.playerHandler.players[npcs[i].killedBy];
-		if(c != null) {
-			for(int o = 0; o < c.barrowsNpcs.length; o++){
-				if(npcs[i].npcType == c.barrowsNpcs[o][0]) {
-					c.barrowsNpcs[o][1] = 2; // 2 for dead
-					//c.barrowsKillCount++;
-				}
-			}
-			if (npcs[i].npcType == 912 || npcs[i].npcType == 913 || npcs[i].npcType == 914)
-				c.magePoints += 1;
-
-			for(npc = 0; npc < Config.NPC_DROPS.length; npc++){
-				if(npcs[i].npcType == Config.NPC_DROPS[npc][0]) {
-					if(Misc.random(Config.NPC_DROPS[npc][3]) == 0) {
-						if (c.clanId >= 0)
-							Server.clanChat.handleLootShare(c, Config.NPC_DROPS[npc][1], Config.NPC_DROPS[npc][2]);
-						Server.itemHandler.createGroundItem(c, Config.NPC_DROPS[npc][1], npcs[i].absX, npcs[i].absY, Config.NPC_DROPS[npc][2], c.playerId);
-					}
-				}
-			}
-		}*/
+		ScriptManager.callFunc("npcDrop_"+npc.npcType, c, npc, server);
 	}
 	
 	public void appendKillCount(int i) {
@@ -1436,146 +1414,6 @@ public void dropItems(int i) {
 		}	
 	}
 	
-	
-	
-	
-	
-	//id of bones dropped by npcs
-	public int boneDrop(int type) {
-		switch (type) {
-			case 1://normal bones
-			case 9:
-			case 100:
-			case 12:
-			case 17:
-			case 803:
-			case 18:
-			case 81:
-			case 101:
-			case 41:
-			case 19:
-			case 90:
-			case 75:
-			case 86:
-			case 78:
-			case 912:
-			case 913:
-			case 914:
-			case 1648:
-			case 1643:
-			case 1618:
-			case 1624:
-			case 181:
-			case 119:
-			case 49:
-			case 26:
-			case 1341:
-			return 526;
-			case 117:
-			return 532;//big bones
-			case 50://drags
-			case 53:
-			case 54:
-			case 55:
-			case 941:
-			case 1590:
-			case 1591:
-			case 1592:
-			return 536;
-			case 84:
-			case 1615:
-			case 1613:
-			case 82:
-			case 3200:
-			return 592;
-			case 2881:
-			case 2882:
-			case 2883:
-			return 6729;
-			default:
-			return -1;
-		}	
-	}
-
-	public int getStackedDropAmount(int itemId, int npcId) {
-		switch (itemId) {
-			case 995:
-				switch (npcId) {
-					case 1:
-					return 50+ Misc.random(50);
-					case 9:
-					return 133 + Misc.random(100);
-					case 1624:
-					return 1000 + Misc.random(300);
-					case 1618:
-					return 1000 + Misc.random(300);
-					case 1643:
-					return 1000 + Misc.random(300);
-					case 1610:
-					return 1000 + Misc.random(1000);
-					case 1613:
-					return 1500 + Misc.random(1250);
-					case 1615:
-					return 3000;
-					case 18:
-					return 500;
-					case 101:
-					return 60;
-					case 913:
-					case 912:
-					case 914:
-					return 750 + Misc.random(500);
-					case 1612:
-					return 250 + Misc.random(500);
-					case 1648:
-					return 250 + Misc.random(250);
-					case 90:
-					return 200;
-					case 82:
-					return 1000 + Misc.random(455);
-					case 52:
-					return 400 + Misc.random(200);
-					case 49:
-					return 1500 + Misc.random(2000);
-					case 1341:
-					return 1500 + Misc.random(500);
-					case 26:
-					return 500 + Misc.random(100);
-					case 20:
-					return 750 + Misc.random(100);
-					case 21: 
-					return 890 + Misc.random(125);
-					case 117:
-					return 500 + Misc.random(250);
-					case 2607:
-					return 500 + Misc.random(350);
-				}			
-			break;
-			case 11212:
-			return 10 + Misc.random(4);
-			case 565:
-			case 561:
-			return 10;
-			case 560:
-			case 563:
-			case 562:
-			return 15;
-			case 555:
-			case 554:
-			case 556:
-			case 557:
-			return 20;
-			case 892:
-			return 40;
-			case 886:
-			return 100;
-			case 6522:
-			return 6 + Misc.random(5);
-			
-		}
-	
-		return 1;
-	}
 	
 	/**
 	* Slayer Experience

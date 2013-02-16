@@ -1,5 +1,9 @@
 def objectClick1_272(player, obId, obX, obY):
 	player.getPA().movePlayer(player.absX, player.absY, 1)
+def objectClick1_1722(player, obId, obX, obY):
+	player.getPA().movePlayer(player.absX, player.absY-4, 1)
+def objectClick1_1723(player, obId, obX, obY):
+	player.getPA().movePlayer(player.absX, player.absY+4, 0)
 def objectClick1_1746(player, obId, obX, obY):
 	player.getPA().movePlayer(player.absX, player.absY, 0)
 def objectClick1_1747(player, obId, obX, obY):

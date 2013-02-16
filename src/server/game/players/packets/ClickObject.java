@@ -54,6 +54,9 @@ public class ClickObject implements PacketType {
 				c.getItems().resetItems(7423);
 			break;
 			
+				case 1722:
+					c.objectXOffset = 0;
+					c.objectYOffset = 2;
 				case 1733:
 					c.objectYOffset = 0;
 				break;

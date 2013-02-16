@@ -31,6 +31,9 @@ def npcClick2_537(c, npcId):
 def npcClick2_540(c, npcId):
 	c.getShops().openShop(20)
 
+def npcClick2_541(c, npcId):
+	c.getShops().openShop(18)
+
 def npcClick2_542(c, npcId):
 	c.getShops().openShop(23)
 

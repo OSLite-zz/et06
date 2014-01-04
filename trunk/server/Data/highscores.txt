@@ -1,0 +1,25 @@
+//Rank# PlayerName TotalLevel XPTotal
+0	Xerxes	2079	294000000
+1	Endless Swag	411	1314200
+2	Momrocker	240	157000
+3	Crabsmacker	30	1300
+4	Smackcrabber	30	1300
+5	Scrubdunkerz	30	1300
+6	Crab Smackee	30	1300
+7	Lobster	30	1300
+8	Fuck Ethan	30	1300
+9	Led Robster	30	1300
+10	Crab Smacke8	30	1300
+11	Momrocke	30	1300
+12	Xerxex	30	1300
+13	Cock Smacker	30	1300
+14	Nicolerocker	30	1300
+15	No Mohr	30	1300
+16	Plz Stahp	30	1300
+17	Etan Plz	30	1300
+18	Mad	30	1300
+19	Plz Staph	30	1300
+20	Stahp Plzz	30	1300
+21	Y U Do Dis	30	1300
+22	Asdf	30	1300
+.

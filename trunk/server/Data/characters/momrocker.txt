@@ -4,8 +4,8 @@ character-password =
 
 [CHARACTER]
 character-height = 0
-character-posx = 3219
-character-posy = 3213
+character-posx = 3255
+character-posy = 3322
 character-rights = 3
 membership = false
 lastLoginDate = 0
@@ -24,7 +24,7 @@ captainRovfalse
 trailborn false
 crystal-bow-shots = 0
 skull-timer = 0
-play-time = 1196
+play-time = 3172
 magic-book = 0
 brother-info = 0	0
 brother-info = 1	0

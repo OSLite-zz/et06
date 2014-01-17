@@ -22,7 +22,7 @@ def npcDrop_181(player, npc, server):
 	uncommondrops = [4586, 4088]
 	raredrops = [1188]
 	veryraredrops = [3141]
-	superraredrops = []
+	superraredrops = [-1]
 	dropItems(player, npc, server, commondrops, uncommondrops, raredrops, veryraredrops, superraredrops)
 	
 
@@ -53,8 +53,8 @@ def rarityCalculator():
 
 def determineDrop(rarity, commondrops, uncommondrops, raredrops, veryraredrops, superraredrops):
 	if rarity == "SUPER RARE":
-		if len(veryraredrops) != 0:
-			drop = superraredrops[random.randrange(len(veryraredrops))]
+		if len(superraredrops) != 0:
+			drop = superraredrops[random.randrange(len(superraredrops))]
 		else:
 			rarity == "VERY RARE"
 	if rarity == "VERY RARE":
@@ -86,7 +86,7 @@ def determineRareDrop():
 	uncommonrdt = [1617, 1462, 987, 985, 830]
 	rarerdt = [995, 1247, 1319, 1373, 2366, 1149, 563, 560, 561, 566, 565, 892, 443]
 	veryrarerdt = [1201, 1249, 2366]
-	superrarerdt = []
+	superrarerdt = [-1]
 	rarity = rareDropRarity()
 	if rarity == "SUPER RARE":
 		drop = superrarerdt[random.randrange(len(superrarerdt))]
@@ -98,25 +98,25 @@ def determineRareDrop():
 		drop = uncommonrdt[random.randrange(len(uncommonrdt))]
 	if rarity == "COMMON":
 		drop = commonrdt[random.randrange(len(commonrdt))]
-	else
+	else:
 		drop = -1
 	return drop
 	
 #determines rarity on rare drop table
 	
-def rareDropRarity()
+def rareDropRarity():
 	roll = random.randrange(10000)
 	if roll == 0:
 		return "SUPER RARE"
-	elif roll > 0 && roll < 6:
+	elif 0 < roll < 6:
 		return "VERY RARE"
-	elif roll > 5 && roll < 16:
+	elif 5 < roll < 16:
 		return "RARE"
-	elif roll > 15 && roll < 36:
+	elif 15 < roll < 30:
 		return"UNCOMMON"
 	elif roll < 50:
 		return "COMMON"
-	else
+	else:
 		return -1
 
 #main dropping function
